@@ -1,4 +1,4 @@
----
+﻿---
 # Leave the homepage title empty to use the site title
 title: ""
 date: 2022-10-24
@@ -6,44 +6,55 @@ type: landing
 design:
   # Default section spacing
   spacing: "6rem"
+
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
+      # Choose a user profile to display (a folder name within content/authors/)
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Descargar CV
-        url: uploads/CV_Abel_Guzmán_Software_ITLA.pdf
+        text:  Descargar CV
+        url: uploads/CV_Abel_Guzman_Software_ITLA.pdf
     design:
       css_class: dark
       background:
         color: black
         image:
-          # Add your image background to `assets/media/`.
+          # Add your image background to ssets/media/.
           filename: stacked-peaks.svg
           filters:
             brightness: 1.0
           size: cover
           position: center
           parallax: false
+
   - block: markdown
     content:
-      title: '🚀 Mi Enfoque Técnico'
-      subtitle: ''
+      title: ' Mi Enfoque Técnico'
+      subtitle: 'Tecnólogo en Desarrollo de Software - ITLA'
       text: |-
-        Especializado en desarrollo de software con enfoque en tecnologías modernas y metodologías ágiles. 
-        Como estudiante del ITLA, aplico conocimientos en DevOps, automatización, contenedores Docker, 
-        y desarrollo de aplicaciones web. Mi experiencia abarca desde programación en múltiples lenguajes 
+        Especializado en desarrollo de software con enfoque en tecnologías modernas y metodologías ágiles.
+        Como estudiante del ITLA, aplico conocimientos en DevOps, automatización, contenedores Docker,
+        y desarrollo de aplicaciones web. Mi experiencia abarca desde programación en múltiples lenguajes
         hasta la implementación de soluciones de infraestructura y análisis de datos.
-        ¡Colaboremos en proyectos innovadores! 😊
+        
+        **Áreas de Expertise:**
+        -  Desarrollo Full-Stack (Frontend & Backend)
+        -  DevOps y Contenedores (Docker, Kubernetes)
+        -  Servicios en la Nube (Azure, AWS)
+        -  Análisis de Datos y Business Intelligence
+        -  Automatización de Procesos
+        
+        ¡Colaboremos en proyectos innovadores! 
     design:
       columns: '1'
+
   - block: collection
     id: papers
     content:
-      title: Publicaciones Destacadas
+      title:  Publicaciones Destacadas
       filters:
         folders:
           - publication
@@ -51,31 +62,35 @@ sections:
     design:
       view: article-grid
       columns: 2
+
   - block: collection
     content:
-      title: Publicaciones Recientes
-      text: ""
+      title:  Publicaciones Recientes
+      text: "Explora mis últimas contribuciones académicas y técnicas"
       filters:
         folders:
           - publication
         exclude_featured: false
     design:
       view: citation
+
   - block: collection
     id: talks
     content:
-      title: Charlas Recientes y Próximas
+      title:  Charlas y Presentaciones
+      subtitle: "Conferencias, workshops y presentaciones técnicas"
       filters:
         folders:
           - event
     design:
       view: article-grid
       columns: 1
+
   - block: collection
     id: news
     content:
-      title: Noticias Recientes
-      subtitle: ''
+      title:  Noticias y Actualizaciones
+      subtitle: 'Mantente al día con mis últimas actividades'
       text: ''
       # Page type to display. E.g. post, talk, publication...
       page_type: post

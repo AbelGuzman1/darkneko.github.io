@@ -1,20 +1,32 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
-# Default language
-en:
-  languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: � 
-#        url: '#about'
-#        weight: 1
+﻿# Configuration of languages
+# Documentation: https://docs.hugoblox.com/reference/multilingual/
+
+es:
+  languageCode: es
+  languageName: Español
+  title: DARK_NEKO
+  params:
+    description: 'Sitio web académico personal de Abel Elías Guzmán Del Orbe, Tecnólogo en Desarrollo de Software del ITLA.'
+  menu:
+    main:
+      - name: Inicio
+        url: /
+        weight: 10
+      - name: Sobre Mí
+        url: /#about
+        weight: 20
+      - name: Publicaciones
+        url: /#papers
+        weight: 30
+      - name: Charlas
+        url: /#talks
+        weight: 40
+      - name: Noticias
+        url: /#news
+        weight: 50
+      - name: Proyectos
+        url: /projects/
+        weight: 60
+      - name: Contacto
+        url: /#contact
+        weight: 70
