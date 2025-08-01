@@ -2,7 +2,7 @@
 # Display name
 title: Abel Elías Guzmán Del Orbe
 # Name pronunciation (optional)
-name_pronunciation: Abel Guzmán
+name_pronunciation: ""
 # Full name (for SEO)
 first_name: ""
 last_name: ""
