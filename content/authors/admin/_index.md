@@ -4,8 +4,8 @@ title: Abel Elías Guzmán Del Orbe
 # Name pronunciation (optional)
 name_pronunciation: Abel Guzmán
 # Full name (for SEO)
-first_name: Abel Elías
-last_name: Guzmán Del Orbe
+first_name: ""
+last_name: ""
 # Status emoji
 status:
   icon: 💻
@@ -14,7 +14,7 @@ superuser: true
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 # Role/position/tagline
-role: Estudiante de Desarrollo de Software | ITLA
+role: Tecnólogo en Desarrollo de Software
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: Instituto Tecnológico de Las Américas (ITLA)
@@ -23,7 +23,7 @@ organizations:
 profiles:
   - icon: at-symbol
     url: 'mailto:abelg4446@gmail.com'
-    label: Envíame un E-mail
+    label: Correo
   - icon: brands/github
     url: https://github.com/AbelGuzman1
   - icon: brands/linkedin
