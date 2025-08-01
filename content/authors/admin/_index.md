@@ -144,4 +144,6 @@ awards:
 ---
 ## Sobre Mí
 
-Estudiante de Tecnología en Desarrollo de Software en el ITLA, con un sólido enfoque en el desarrollo de soluciones digitales y la optimización de procesos mediante la implementación de buenas prácticas y metodologías ágiles. Durante mis prácticas en el ITLA, he ganado experiencia en el análisis, diseño y desarrollo de aplicaciones. Mi formación se extiende a áreas clave como DevOps, donde he trabajado en el despliegue de microservicios y la automatización de la entrega continua, así como en Inteligencia Artificial y Análisis de Datos, fortaleciendo mi capacidad para procesar información y aplicar modelos predictivos. He participado en el Samsung Innovation Campus (ediciones de Programación e Inteligencia Artificial), consolidando mi lógica, pensamiento computacional y habilidad para resolver problemas complejos. Me destaco por ser autodidacta, adaptable y orientado a resultados, contando con 57 cursos y certificaciones en diversas áreas del desarrollo de software y tecnologías emergentes.
+Experiencia Académica y Técnica Poseo conocimientos en prácticas DevOps, enfocados en la automatización con GitHub Actions (CI/CD), despliegue de contenedores con Docker, gestión de infraestructura mediante Ansible, administración en entornos Linux y el uso de Azure DevOps para la gestión de proyectos.
+
+Complemento mi formación con fundamentos en Inteligencia Artificial y Análisis de Datos, aplicados a procesos de ETL y migración de bases de datos en proyectos académicos.
