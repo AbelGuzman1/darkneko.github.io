@@ -31,7 +31,7 @@ profiles:
   - icon: brands/whatsapp
     url: 'https://wa.me/18295395559'
     label: WhatsApp
-  - icon: cv
+  - icon: academicons/cv
     url: '/uploads/CV_Abel_Guzman_Software_ITLA.pdf'
     label: 'Download CV'
 interests:
@@ -142,7 +142,7 @@ languages:
 # Awards and Certifications
 awards:
   - title: Estudiante Activo - Desarrollo de Software
-    date: '2023-2025'
+    date: '2023-01-01'
     awarder: ITLA
     summary: |
       Cursando carrera tÃ©cnica superior en Desarrollo de Software con enfoque en 
@@ -162,3 +162,4 @@ Busco oportunidades para aplicar mis conocimientos en proyectos reales y contrib
 - **WhatsApp:** +1 (829) 539-5559
 - **DirecciÃ³n:** Santiago, RepÃºblica Dominicana
 - **GitHub:** [github.com/AbelGuzman1](https://github.com/AbelGuzman1)
+
