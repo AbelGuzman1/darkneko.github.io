@@ -31,8 +31,8 @@ profiles:
   - icon: brands/whatsapp
     url: 'https://wa.me/8093518297'
     label: WhatsApp
-  - icon: document-text
-    url: '/CV_Abel_Guzmán_Software_ITLA.pdf'
+  - icon: cv
+    url: 'uploads/CV_Abel_Guzmán_Software_ITLA.pdf'
     label: 'Descargar CV'
 interests:
   - Desarrollo de Software
