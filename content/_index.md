@@ -15,7 +15,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Descargar CV
-        url: uploads/CV_Abel_Guzmán_Software_ITLA.pdf
+        url: uploads/CV_Abel_GuzmÃ¡n_Software_ITLA.pdf
     design:
       css_class: dark
       background:
@@ -30,14 +30,14 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: ' Mi Enfoque Técnico'
+      title: 'ðŸš€ Mi Enfoque TÃ©cnico'
       subtitle: ''
       text: |-
-        Especializado en desarrollo de software con enfoque en tecnologías modernas y metodologías ágiles. 
-        Como estudiante del ITLA, aplico conocimientos en DevOps, automatización, contenedores Docker, 
-        y desarrollo de aplicaciones web. Mi experiencia abarca desde programación en múltiples lenguajes 
-        hasta la implementación de soluciones de infraestructura y análisis de datos.
-        ¡Colaboremos en proyectos innovadores! 
+        Especializado en desarrollo de software con enfoque en tecnologÃ­as modernas y metodologÃ­as Ã¡giles. 
+        Como estudiante del ITLA, aplico conocimientos en DevOps, automatizaciÃ³n, contenedores Docker, 
+        y desarrollo de aplicaciones web. Mi experiencia abarca desde programaciÃ³n en mÃºltiples lenguajes 
+        hasta la implementaciÃ³n de soluciones de infraestructura y anÃ¡lisis de datos.
+        Â¡Colaboremos en proyectos innovadores! ðŸ˜Š
     design:
       columns: '1'
   - block: collection
@@ -64,7 +64,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Charlas Recientes y Próximas
+      title: Charlas Recientes y PrÃ³ximas
       filters:
         folders:
           - event
