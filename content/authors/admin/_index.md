@@ -31,8 +31,8 @@ profiles:
   - icon: brands/whatsapp
     url: 'https://wa.me/18295395559'
     label: WhatsApp
-  - icon: cv
-    url: '/uploads/CV_Abel_Guzmán_Software_ITLA.pdf'
+  - icon: document-text
+    url: '/uploads/CV_Abel_Guzman_Software_ITLA.pdf'
     label: 'Descargar CV'
 interests:
   - Desarrollo de Software
@@ -142,7 +142,8 @@ languages:
 # Awards and Certifications
 awards:
   - title: Estudiante Activo - Desarrollo de Software
-    date: '2023-2025'
+    date: '2023-01-01'
+    date_end: '2025-12-31'
     awarder: ITLA
     summary: |
       Cursando carrera técnica superior en Desarrollo de Software con enfoque en 
