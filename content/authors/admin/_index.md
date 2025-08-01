@@ -144,8 +144,4 @@ awards:
 ---
 ## Sobre Mí
 
-Soy Abel Elías Guzmán Del Orbe, estudiante del técnico superior en Desarrollo de Software en el Instituto Tecnológico de Las Américas (ITLA). Me apasiona la programación y el desarrollo de soluciones tecnológicas innovadoras.
-
-Mi formación académica se enfoca en el desarrollo completo, con experiencia en múltiples lenguajes de programación y tecnologías web modernas. Estoy comprometido con el aprendizaje continuo y la aplicación de las mejores prácticas en el desarrollo de software.
-
-Busco oportunidades para aplicar mis conocimientos en proyectos reales y contribuir al crecimiento de equipos de desarrollo, mientras continúo expandiendo mis habilidades técnicas y profesionales.
+Estudiante de Tecnología en Desarrollo de Software en el ITLA, con un sólido enfoque en el desarrollo de soluciones digitales y la optimización de procesos mediante la implementación de buenas prácticas y metodologías ágiles. Durante mis prácticas en el ITLA, he ganado experiencia en el análisis, diseño y desarrollo de aplicaciones. Mi formación se extiende a áreas clave como DevOps, donde he trabajado en el despliegue de microservicios y la automatización de la entrega continua, así como en Inteligencia Artificial y Análisis de Datos, fortaleciendo mi capacidad para procesar información y aplicar modelos predictivos. He participado en el Samsung Innovation Campus (ediciones de Programación e Inteligencia Artificial), consolidando mi lógica, pensamiento computacional y habilidad para resolver problemas complejos. Me destaco por ser autodidacta, adaptable y orientado a resultados, contando con 57 cursos y certificaciones en diversas áreas del desarrollo de software y tecnologías emergentes.
