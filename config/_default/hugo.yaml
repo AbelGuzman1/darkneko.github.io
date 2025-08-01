@@ -12,7 +12,7 @@ baseURL: 'https://abelguzman1.github.io/darkneko.github.io/'
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: es
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
