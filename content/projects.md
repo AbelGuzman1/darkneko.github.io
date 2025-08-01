@@ -1,18 +1,16 @@
 ---
-title: 'Projects'
+title: 'Proyectos'
 date: 2024-05-19
 type: landing
-
 design:
   # Section spacing
   spacing: '5rem'
-
 # Page sections
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: Proyectos Seleccionados
+      text: Disfruto crear cosas. Aquí tienes una selección de proyectos en los que he trabajado a lo largo de los años.
       filters:
         folders:
           - project
