@@ -1,12 +1,12 @@
 ---
-title: "An example preprint / working paper"
+title: "Análisis de Algoritmos de Machine Learning para Predicción de Datos"
 authors:
 - admin
-date: "2019-04-07T00:00:00Z"
+date: "2024-07-20T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2024-07-20T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -17,13 +17,15 @@ publication_types: ["article"]
 publication: ""
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Este trabajo de investigación examina la efectividad de diferentes algoritmos de machine learning para la predicción de datos en aplicaciones de software. Se comparan modelos de regresión lineal, árboles de decisión y redes neuronales, evaluando su precisión y eficiencia computacional en diversos conjuntos de datos.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: Investigación comparativa de algoritmos de machine learning para predicción de datos, evaluando precisión y eficiencia en aplicaciones de software.
 
 tags:
-- Large Language Models
+- Machine Learning
+- Análisis de Datos
+- ITLA
 
 featured: true
 

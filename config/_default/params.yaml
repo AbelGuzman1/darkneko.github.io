@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Sitio web acadÈmico personal de Abel ElÌas Guzm·n Del Orbe, TecnÛlogo en Desarrollo de Software del ITLA.'
+    description: 'Sitio web acad√©mico personal de Abel El√≠as Guzm√°n Del Orbe, Tecn√≥logo en Desarrollo de Software del ITLA.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -40,7 +40,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: ' {year} Abel ElÌas Guzm·n Del Orbe. Este trabajo est· licenciado bajo {license}'
+    notice: '¬© {year} Abel El√≠as Guzm√°n Del Orbe. Este trabajo est√° licenciado bajo {license}'
     license:
       enable: true
       allow_derivatives: false

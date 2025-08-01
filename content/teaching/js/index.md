@@ -1,22 +1,24 @@
 ---
-title: Learn JavaScript
-summary: Easily learn JavaScript in 10 minutes!
+title: Aprende JavaScript
+summary: ¡Domina JavaScript fácilmente con enfoque en desarrollo web moderno!
 date: 2023-10-24
 type: docs
 math: false
 tags:
   - JavaScript
+  - Desarrollo Web
+  - ITLA
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: 'Incorpora contenido multimedia enriquecido como videos y matemáticas LaTeX'
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+Como estudiante de **Desarrollo de Software en ITLA**, JavaScript es fundamental para el desarrollo web tanto en frontend como en backend. [Hugo Blox Builder](https://hugoblox.com) está diseñado para brindar a los creadores de contenido técnico una experiencia perfecta.
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+**¡Incorpora videos, podcasts, código, matemáticas LaTeX, e incluso evalúa estudiantes!**
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+En esta página, encontrarás algunos ejemplos de los tipos de contenido técnico que se pueden renderizar con Hugo Blox, enfocados en el aprendizaje de JavaScript para desarrollo de aplicaciones web modernas.
 
-## Video
+## Videos Educativos
 
 Teach your course by sharing videos with your students. Choose from one of the following approaches:
 

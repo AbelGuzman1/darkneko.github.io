@@ -1,17 +1,19 @@
 ---
-title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+title: ✅ Gestión de Proyectos de Software
+summary: Aprende metodologías ágiles, herramientas de planificación y técnicas de gestión de proyectos de desarrollo aplicadas en ITLA.
 date: 2023-10-23
 authors:
   - admin
 tags:
-  - Hugo Blox
-  - Markdown
+  - Gestión de Proyectos
+  - Metodologías Ágiles
+  - ITLA
+  - Desarrollo de Software
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: 'Crédito de imagen: [**Unsplash**](https://unsplash.com)'
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+Como estudiante de **Desarrollo de Software en ITLA**, he aprendido que la gestión efectiva de proyectos es crucial para el éxito en el desarrollo de software. Aquí exploro metodologías ágiles, herramientas de planificación y técnicas de organización que aplico en mis proyectos académicos y personales.
 
 ## Ideation
 

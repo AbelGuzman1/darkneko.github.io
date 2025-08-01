@@ -1,27 +1,28 @@
 ---
-title: 👩🏼‍🏫 Teach academic courses
-summary: Embed videos, podcasts, code, LaTeX math, and even test students!
+title: �‍🏫 Enseñanza y Tutorías Técnicas
+summary: ¡Incorpora videos, podcasts, código, matemáticas LaTeX e incluso evalúa estudiantes!
 date: 2023-10-24
 math: true
 authors:
   - admin
 tags:
-  - Hugo
-  - Hugo Blox Builder
-  - Markdown
+  - Educación
+  - Programación
+  - ITLA
+  - Tutorías
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: 'Incorpora contenido multimedia enriquecido como videos y matemáticas LaTeX'
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+Como estudiante de **Desarrollo de Software en ITLA**, he descubierto la importancia de compartir conocimiento con mis compañeros. [Hugo Blox Builder](https://hugoblox.com) está diseñado para brindar a los creadores de contenido técnico una experiencia perfecta.
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+**¡Incorpora videos, podcasts, código, matemáticas LaTeX, e incluso evalúa estudiantes!**
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+En esta página, encontrarás algunos ejemplos de los tipos de contenido técnico que puedo crear para enseñar conceptos de programación y desarrollo de software.
 
-## Video
+## Videos Educativos
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+Enseño conceptos de programación compartiendo videos con mis compañeros estudiantes. Elijo entre uno de los siguientes enfoques:
 
 **Youtube**:
 

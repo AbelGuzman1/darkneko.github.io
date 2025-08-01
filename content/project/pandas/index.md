@@ -1,13 +1,31 @@
 ---
-title: Pandas
-date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
+title: Sistema de Gestión de Inventario
+date: 2024-03-15
+external_link: https://github.com/AbelGuzman1/sistema-inventario
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - C#
+  - SQL Server
+  - .NET
+  - ITLA
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+Sistema completo de gestión de inventario desarrollado en C# con SQL Server como parte de mi formación en ITLA. Incluye funcionalidades de CRUD, reportes y control de usuarios.
 
 <!--more-->
+
+## Características del Sistema
+
+- **Frontend**: Desarrollado en Windows Forms con C#
+- **Backend**: API REST con ASP.NET Core
+- **Base de Datos**: SQL Server con procedimientos almacenados
+- **Autenticación**: Sistema de roles y permisos
+- **Reportes**: Generación de reportes en PDF
+
+## Tecnologías Aplicadas
+
+Este proyecto me permitió aplicar conocimientos en:
+- Programación Orientada a Objetos
+- Patrones de Diseño (MVC, Repository)
+- Manejo de Bases de Datos Relacionales
+- Desarrollo de APIs RESTful
+- Metodologías Ágiles de Desarrollo

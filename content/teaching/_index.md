@@ -1,6 +1,6 @@
 ---
-title: Enseñanza
-summary: Mis cursos
+title: EnseÃ±anza
+summary: Recursos educativos y tutoriales
 type: landing
 cascade:
   - _target:
@@ -11,7 +11,7 @@ sections:
   - block: collection
     id: teaching
     content:
-      title: Enseñanza
+      title: EnseÃ±anza
       filters:
         folders:
           - teaching
