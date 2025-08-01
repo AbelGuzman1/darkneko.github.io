@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/CV_Abel_Guzmán_Software_ITLA.pdf
+        url: uploads/CV_Abel_Guzman_Software_ITLA.pdf
     design:
       css_class: dark
       background:
