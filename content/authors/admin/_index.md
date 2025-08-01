@@ -33,7 +33,7 @@ profiles:
     label: WhatsApp
   - icon: document-arrow-down
     url: 'uploads/CV_Abel_Guzmán_Software_ITLA.pdf'
-    label: 'Descargar CV'
+    label: 'Download CV'
 interests:
   - Desarrollo de Software
   - Programación Web
