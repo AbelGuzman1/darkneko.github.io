@@ -1,186 +1,164 @@
 ---
 # Display name
-title: 吳健雄
-
+title: Abel Elías Guzmán Del Orbe
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
-
+name_pronunciation: Abel Guzmán
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
-
+first_name: Abel Elías
+last_name: Guzmán Del Orbe
 # Status emoji
 status:
-  icon: ☕️
-
+  icon: 
 # Is this the primary user of the site?
 superuser: true
-
 # Highlight the author in author lists? (true/false)
 highlight_name: true
-
 # Role/position/tagline
-role: Chief Scientist
-
+role: Estudiante de Desarrollo de Software | ITLA
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
-
+  - name: Instituto Tecnológico de Las Américas (ITLA)
+    url: https://itla.edu.do/
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:abeleliasguzmandelorbe1@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/AbelGuzman1
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
-
+    url: https://www.linkedin.com/in/abel-guzman/
+  - icon: brands/whatsapp
+    url: 'https://wa.me/18295395559'
+    label: WhatsApp
+  - icon: cv
+    url: '/uploads/CV_Abel_Guzman_Software_ITLA.pdf'
+    label: 'Download CV'
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
-
+  - Desarrollo de Software
+  - Programación Web
+  - Desarrollo Frontend y Backend
+  - Bases de Datos
+  - Tecnologías Cloud
+  - DevOps
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: Técnico Superior en Desarrollo de Software
+    institution: Instituto Tecnológico de Las Américas (ITLA)
+    date_start: 2023-01-01
+    date_end: 2025-12-31
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Carrera técnica especializada en desarrollo de software con enfoque en programación web, 
+      bases de datos y tecnologías modernas. Formación integral en metodologías de desarrollo
+      y buenas prácticas de programación.
     button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      text: 'Ver Institución'
+      url: 'https://itla.edu.do/'
+  - area: Bachillerato en Ciencias y Letras
+    institution: Liceo Secundario Presidente Billini
+    date_start: 2019-01-01
+    date_end: 2022-12-31
     summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Educación secundaria completa con orientación en ciencias y letras,
+      proporcionando una base sólida para estudios técnicos superiores.
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
+  - position: Estudiante de Desarrollo de Software
+    company_name: ITLA
+    company_url: 'https://itla.edu.do/'
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2023-01-01
     date_end: ''
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
+      Actividades académicas y proyectos:
+      - Desarrollo de aplicaciones web usando HTML, CSS, JavaScript
+      - Programación en múltiples lenguajes (C#, Python, Java)
+      - Trabajo con bases de datos SQL Server y MySQL
+      - Desarrollo de proyectos colaborativos y en equipo
+      - Aplicación de metodologías ágiles en desarrollo de software
 # Skills
-# Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Lenguajes de Programación
     items:
-      - name: Python
-        description: ''
+      - name: C#
+        description: 'Desarrollo de aplicaciones .NET'
+        percent: 85
+        icon: code-bracket
+      - name: JavaScript
+        description: 'Frontend y Backend development'
         percent: 80
         icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
+      - name: Python
+        description: 'Scripting y desarrollo de aplicaciones'
+        percent: 75
+        icon: code-bracket
+      - name: Java
+        description: 'Desarrollo orientado a objetos'
+        percent: 70
+        icon: code-bracket
+  - name: Tecnologías Web
+    items:
+      - name: HTML/CSS
+        description: 'Desarrollo frontend moderno'
+        percent: 90
+        icon: code-bracket
+      - name: React
+        description: 'Desarrollo de interfaces de usuario'
+        percent: 75
+        icon: code-bracket
+      - name: Node.js
+        description: 'Desarrollo backend con JavaScript'
+        percent: 70
+        icon: server
+  - name: Bases de Datos
+    items:
+      - name: SQL Server
+        description: 'Administración y desarrollo'
+        percent: 80
         icon: circle-stack
-  - name: Hobbies
+      - name: MySQL
+        description: 'Diseño y consultas'
+        percent: 75
+        icon: circle-stack
+  - name: Herramientas y Tecnologías
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
+      - name: Git/GitHub
+        description: 'Control de versiones'
+        percent: 85
+        icon: brands/github
+      - name: Visual Studio
+        description: 'IDE para desarrollo .NET'
+        percent: 90
+        icon: code-bracket
+      - name: Docker
+        description: 'Containerización de aplicaciones'
         percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
-
+        icon: server
 languages:
-  - name: English
+  - name: Español
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
-
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+  - name: Inglés
+    percent: 70
+# Awards and Certifications
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
+  - title: Estudiante Activo - Desarrollo de Software
+    date: '2023-2025'
+    awarder: ITLA
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Cursando carrera técnica superior en Desarrollo de Software con enfoque en 
+      tecnologías modernas y metodologías de desarrollo ágil.
 ---
+## Sobre Mí
 
-## About Me
+Soy Abel Elías Guzmán Del Orbe, estudiante del técnico superior en Desarrollo de Software en el Instituto Tecnológico de Las Américas (ITLA). Me apasiona la programación y el desarrollo de soluciones tecnológicas innovadoras.
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Mi formación académica se enfoca en el desarrollo full-stack, con experiencia en múltiples lenguajes de programación y tecnologías web modernas. Estoy comprometido con el aprendizaje continuo y la aplicación de las mejores prácticas en el desarrollo de software.
+
+Busco oportunidades para aplicar mis conocimientos en proyectos reales y contribuir al crecimiento de equipos de desarrollo, mientras continúo expandiendo mis habilidades técnicas y profesionales.
+
+## Información de Contacto
+
+- **Email:** abeleliasguzmandelorbe1@gmail.com
+- **WhatsApp:** +1 (829) 539-5559
+- **Dirección:** Santiago, República Dominicana
+- **GitHub:** [github.com/AbelGuzman1](https://github.com/AbelGuzman1)
