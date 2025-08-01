@@ -1,6 +1,6 @@
 ---
 # Display name
-title: DARK_NEKO
+title: Abel Elías Guzmán Del Orbe
 # Name pronunciation (optional)
 name_pronunciation: ""
 # Full name (for SEO)
