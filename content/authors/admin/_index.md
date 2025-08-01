@@ -1,14 +1,14 @@
 ---
 # Display name
-title: Abel Elías Guzmán Del Orbe
+title: Abel ElÃ­as GuzmÃ¡n Del Orbe
 # Name pronunciation (optional)
-name_pronunciation: Abel Guzmán
+name_pronunciation: Abel GuzmÃ¡n
 # Full name (for SEO)
-first_name: Abel Elías
-last_name: Guzmán Del Orbe
+first_name: Abel ElÃ­as
+last_name: GuzmÃ¡n Del Orbe
 # Status emoji
 status:
-  icon: 
+  icon: ðŸ’»
 # Is this the primary user of the site?
 superuser: true
 # Highlight the author in author lists? (true/false)
@@ -17,7 +17,7 @@ highlight_name: true
 role: Estudiante de Desarrollo de Software | ITLA
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Instituto Tecnológico de Las Américas (ITLA)
+  - name: Instituto TecnolÃ³gico de Las AmÃ©ricas (ITLA)
     url: https://itla.edu.do/
 # Social network links
 profiles:
@@ -36,30 +36,30 @@ profiles:
     label: 'Download CV'
 interests:
   - Desarrollo de Software
-  - Programación Web
+  - ProgramaciÃ³n Web
   - Desarrollo Frontend y Backend
   - Bases de Datos
-  - Tecnologías Cloud
+  - TecnologÃ­as Cloud
   - DevOps
 education:
-  - area: Técnico Superior en Desarrollo de Software
-    institution: Instituto Tecnológico de Las Américas (ITLA)
+  - area: TÃ©cnico Superior en Desarrollo de Software
+    institution: Instituto TecnolÃ³gico de Las AmÃ©ricas (ITLA)
     date_start: 2023-01-01
     date_end: 2025-12-31
     summary: |
-      Carrera técnica especializada en desarrollo de software con enfoque en programación web, 
-      bases de datos y tecnologías modernas. Formación integral en metodologías de desarrollo
-      y buenas prácticas de programación.
+      Carrera tÃ©cnica especializada en desarrollo de software con enfoque en programaciÃ³n web, 
+      bases de datos y tecnologÃ­as modernas. FormaciÃ³n integral en metodologÃ­as de desarrollo
+      y buenas prÃ¡cticas de programaciÃ³n.
     button:
-      text: 'Ver Institución'
+      text: 'Ver InstituciÃ³n'
       url: 'https://itla.edu.do/'
   - area: Bachillerato en Ciencias y Letras
     institution: Liceo Secundario Presidente Billini
     date_start: 2019-01-01
     date_end: 2022-12-31
     summary: |
-      Educación secundaria completa con orientación en ciencias y letras,
-      proporcionando una base sólida para estudios técnicos superiores.
+      EducaciÃ³n secundaria completa con orientaciÃ³n en ciencias y letras,
+      proporcionando una base sÃ³lida para estudios tÃ©cnicos superiores.
 work:
   - position: Estudiante de Desarrollo de Software
     company_name: ITLA
@@ -68,15 +68,15 @@ work:
     date_start: 2023-01-01
     date_end: ''
     summary: |2-
-      Actividades académicas y proyectos:
+      Actividades acadÃ©micas y proyectos:
       - Desarrollo de aplicaciones web usando HTML, CSS, JavaScript
-      - Programación en múltiples lenguajes (C#, Python, Java)
+      - ProgramaciÃ³n en mÃºltiples lenguajes (C#, Python, Java)
       - Trabajo con bases de datos SQL Server y MySQL
       - Desarrollo de proyectos colaborativos y en equipo
-      - Aplicación de metodologías ágiles en desarrollo de software
+      - AplicaciÃ³n de metodologÃ­as Ã¡giles en desarrollo de software
 # Skills
 skills:
-  - name: Lenguajes de Programación
+  - name: Lenguajes de ProgramaciÃ³n
     items:
       - name: C#
         description: 'Desarrollo de aplicaciones .NET'
@@ -94,7 +94,7 @@ skills:
         description: 'Desarrollo orientado a objetos'
         percent: 70
         icon: code-bracket
-  - name: Tecnologías Web
+  - name: TecnologÃ­as Web
     items:
       - name: HTML/CSS
         description: 'Desarrollo frontend moderno'
@@ -111,14 +111,14 @@ skills:
   - name: Bases de Datos
     items:
       - name: SQL Server
-        description: 'Administración y desarrollo'
+        description: 'AdministraciÃ³n y desarrollo'
         percent: 80
         icon: circle-stack
       - name: MySQL
-        description: 'Diseño y consultas'
+        description: 'DiseÃ±o y consultas'
         percent: 75
         icon: circle-stack
-  - name: Herramientas y Tecnologías
+  - name: Herramientas y TecnologÃ­as
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
@@ -131,13 +131,13 @@ skills:
         percent: 90
         icon: code-bracket
       - name: Docker
-        description: 'Containerización de aplicaciones'
+        description: 'ContainerizaciÃ³n de aplicaciones'
         percent: 60
         icon: server
 languages:
-  - name: Español
+  - name: EspaÃ±ol
     percent: 100
-  - name: Inglés
+  - name: InglÃ©s
     percent: 70
 # Awards and Certifications
 awards:
@@ -145,20 +145,20 @@ awards:
     date: '2023-2025'
     awarder: ITLA
     summary: |
-      Cursando carrera técnica superior en Desarrollo de Software con enfoque en 
-      tecnologías modernas y metodologías de desarrollo ágil.
+      Cursando carrera tÃ©cnica superior en Desarrollo de Software con enfoque en 
+      tecnologÃ­as modernas y metodologÃ­as de desarrollo Ã¡gil.
 ---
-## Sobre Mí
+## Sobre MÃ­
 
-Soy Abel Elías Guzmán Del Orbe, estudiante del técnico superior en Desarrollo de Software en el Instituto Tecnológico de Las Américas (ITLA). Me apasiona la programación y el desarrollo de soluciones tecnológicas innovadoras.
+Soy Abel ElÃ­as GuzmÃ¡n Del Orbe, estudiante del tÃ©cnico superior en Desarrollo de Software en el Instituto TecnolÃ³gico de Las AmÃ©ricas (ITLA). Me apasiona la programaciÃ³n y el desarrollo de soluciones tecnolÃ³gicas innovadoras.
 
-Mi formación académica se enfoca en el desarrollo full-stack, con experiencia en múltiples lenguajes de programación y tecnologías web modernas. Estoy comprometido con el aprendizaje continuo y la aplicación de las mejores prácticas en el desarrollo de software.
+Mi formaciÃ³n acadÃ©mica se enfoca en el desarrollo full-stack, con experiencia en mÃºltiples lenguajes de programaciÃ³n y tecnologÃ­as web modernas. Estoy comprometido con el aprendizaje continuo y la aplicaciÃ³n de las mejores prÃ¡cticas en el desarrollo de software.
 
-Busco oportunidades para aplicar mis conocimientos en proyectos reales y contribuir al crecimiento de equipos de desarrollo, mientras continúo expandiendo mis habilidades técnicas y profesionales.
+Busco oportunidades para aplicar mis conocimientos en proyectos reales y contribuir al crecimiento de equipos de desarrollo, mientras continÃºo expandiendo mis habilidades tÃ©cnicas y profesionales.
 
-## Información de Contacto
+## InformaciÃ³n de Contacto
 
 - **Email:** abeleliasguzmandelorbe1@gmail.com
 - **WhatsApp:** +1 (829) 539-5559
-- **Dirección:** Santiago, República Dominicana
+- **DirecciÃ³n:** Santiago, RepÃºblica Dominicana
 - **GitHub:** [github.com/AbelGuzman1](https://github.com/AbelGuzman1)
