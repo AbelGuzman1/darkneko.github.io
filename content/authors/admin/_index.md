@@ -22,18 +22,15 @@ organizations:
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:abeleliasguzmandelorbe1@gmail.com'
+    url: 'mailto:abelg4446@gmail.com'
     label: Envíame un E-mail
   - icon: brands/github
     url: https://github.com/AbelGuzman1
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/abel-guzman/
+    url: https://www.linkedin.com/in/abeleliasguzman/
   - icon: brands/whatsapp
-    url: 'https://wa.me/18295395559'
+    url: 'https://wa.me/8093518297'
     label: WhatsApp
-  - icon: document-text
-    url: '/uploads/CV_Abel_Guzman_Software_ITLA.pdf'
-    label: 'Descargar CV'
 interests:
   - Desarrollo de Software
   - Programación Web
@@ -53,13 +50,6 @@ education:
     button:
       text: 'Ver Institución'
       url: 'https://itla.edu.do/'
-  - area: Bachillerato en Ciencias y Letras
-    institution: Liceo Secundario Presidente Billini
-    date_start: 2019-01-01
-    date_end: 2022-12-31
-    summary: |
-      Educación secundaria completa con orientación en ciencias y letras,
-      proporcionando una base sólida para estudios técnicos superiores.
 work:
   - position: Estudiante de Desarrollo de Software
     company_name: ITLA
@@ -156,10 +146,3 @@ Soy Abel Elías Guzmán Del Orbe, estudiante del técnico superior en Desarrollo
 Mi formación académica se enfoca en el desarrollo completo, con experiencia en múltiples lenguajes de programación y tecnologías web modernas. Estoy comprometido con el aprendizaje continuo y la aplicación de las mejores prácticas en el desarrollo de software.
 
 Busco oportunidades para aplicar mis conocimientos en proyectos reales y contribuir al crecimiento de equipos de desarrollo, mientras continúo expandiendo mis habilidades técnicas y profesionales.
-
-## Información de Contacto
-
-- **Email:** abeleliasguzmandelorbe1@gmail.com
-- **WhatsApp:** +1 (829) 539-5559
-- **Dirección:** Santiago, República Dominicana
-- **GitHub:** [github.com/AbelGuzman1](https://github.com/AbelGuzman1)
