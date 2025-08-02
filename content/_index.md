@@ -135,7 +135,28 @@ sections:
       title: "Contacto"
       subtitle: "¡Conectemos y colaboremos!"
       text: |-
-        {{< contact-form-simple >}}
+        ¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? 
+        No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
+        
+        <p><strong>Envíame un mensaje:</strong> <a href="mailto:abelg4446@gmail.com">abelg4446@gmail.com</a></p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; max-width: 600px; margin: 2rem auto; padding: 0 1rem;">
+          <a href="https://github.com/AbelGuzman1" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; background: rgba(255,255,255,0.15); border-radius: 12px; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease; min-height: 50px; font-size: 1rem;">
+            <span>📁</span> GitHub
+          </a>
+          
+          <a href="https://www.linkedin.com/in/abeleliasguzman/" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; background: rgba(255,255,255,0.15); border-radius: 12px; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease; min-height: 50px; font-size: 1rem;">
+            <span>💼</span> LinkedIn
+          </a>
+          
+          <a href="mailto:abelg4446@gmail.com" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; background: rgba(255,255,255,0.15); border-radius: 12px; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease; min-height: 50px; font-size: 1rem;">
+            <span>📧</span> Correo
+          </a>
+          
+          <a href="https://wa.me/18093518297" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; background: rgba(255,255,255,0.15); border-radius: 12px; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease; min-height: 50px; font-size: 1rem;">
+            <span>📱</span> WhatsApp
+          </a>
+        </div>
     design:
       columns: '1'
       spacing:
