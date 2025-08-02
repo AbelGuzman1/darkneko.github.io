@@ -127,50 +127,69 @@ sections:
         No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
         
         <style>
-        /* Estilos adaptativos para tema claro/oscuro */
+        /* Contenedor principal con gradiente verde similar al "Sobre Mí" */
+        .contact-container {
+          background: linear-gradient(135deg, #0d6efd 0%, #198754 50%, #20c997 100%);
+          padding: 4rem 2rem;
+          margin: 2rem -2rem;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        /* Patrón de fondo similar al de "Sobre Mí" */
+        .contact-container::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+          opacity: 0.3;
+        }
+        
+        /* Formulario neutro y limpio */
         .contact-form {
-          max-width: 650px;
-          margin: 2rem auto;
-          padding: 3rem;
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 2.5rem;
+          background: rgba(255, 255, 255, 0.95);
           border-radius: 16px;
-          box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-          transition: all 0.3s ease;
-          background: linear-gradient(135deg, rgba(25, 135, 84, 0.05) 0%, rgba(25, 135, 84, 0.1) 100%);
-          border: 1px solid rgba(25, 135, 84, 0.2);
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+          backdrop-filter: blur(10px);
+          position: relative;
+          z-index: 2;
         }
         
         [data-theme="dark"] .contact-form {
-          background: linear-gradient(135deg, rgba(25, 135, 84, 0.1) 0%, rgba(25, 135, 84, 0.15) 100%);
-          border: 1px solid rgba(25, 135, 84, 0.3);
-          box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+          background: rgba(40, 44, 52, 0.95);
+          color: #f8f9fa;
         }
         
         .form-group {
-          margin-bottom: 1.75rem;
-          position: relative;
+          margin-bottom: 1.5rem;
         }
         
         .form-label {
           display: block;
-          margin-bottom: 0.75rem;
+          margin-bottom: 0.5rem;
           font-weight: 600;
-          color: #198754;
+          color: #333;
           font-size: 0.95rem;
-          letter-spacing: 0.5px;
         }
         
         [data-theme="dark"] .form-label {
-          color: #20c997;
+          color: #f8f9fa;
         }
         
         .form-input, .form-textarea {
           width: 100%;
-          padding: 1rem 1.25rem;
-          border: 2px solid rgba(25, 135, 84, 0.2);
+          padding: 0.875rem 1rem;
+          border: 2px solid #e9ecef;
           border-radius: 8px;
           font-size: 1rem;
           transition: all 0.3s ease;
-          background: rgba(255, 255, 255, 0.8);
+          background: #fff;
           color: #333;
           box-sizing: border-box;
         }
@@ -179,43 +198,41 @@ sections:
           outline: none;
           border-color: #198754;
           box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.1);
-          transform: translateY(-2px);
         }
         
         [data-theme="dark"] .form-input, [data-theme="dark"] .form-textarea {
-          background: rgba(40, 44, 52, 0.8);
+          background: #495057;
           color: #f8f9fa;
-          border-color: rgba(25, 135, 84, 0.3);
+          border-color: #6c757d;
         }
         
         [data-theme="dark"] .form-input:focus, [data-theme="dark"] .form-textarea:focus {
           border-color: #20c997;
-          box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.2);
+          box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.1);
         }
         
         .submit-btn {
-          background: linear-gradient(135deg, #198754 0%, #20c997 100%);
+          background: #198754;
           color: white;
-          padding: 1rem 2.5rem;
+          padding: 0.875rem 2rem;
           border: none;
           border-radius: 8px;
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 600;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 15px rgba(25, 135, 84, 0.3);
-          letter-spacing: 0.5px;
+          width: 100%;
         }
         
         .submit-btn:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 8px 25px rgba(25, 135, 84, 0.4);
-          background: linear-gradient(135deg, #157347 0%, #1aa179 100%);
+          background: #157347;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(25, 135, 84, 0.3);
         }
         
         .form-success {
-          margin-top: 1.5rem;
-          font-size: 0.9rem;
+          margin-top: 1rem;
+          font-size: 0.875rem;
           color: #198754;
           text-align: center;
           font-weight: 500;
@@ -224,38 +241,63 @@ sections:
         [data-theme="dark"] .form-success {
           color: #20c997;
         }
+        
+        /* Título en la sección verde */
+        .contact-title {
+          color: white;
+          text-align: center;
+          margin-bottom: 3rem;
+          position: relative;
+          z-index: 2;
+        }
+        
+        .contact-subtitle {
+          color: rgba(255, 255, 255, 0.9);
+          text-align: center;
+          margin-bottom: 2rem;
+          position: relative;
+          z-index: 2;
+        }
         </style>
         
-        <form action="https://formspree.io/f/mwpqnpzo" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="nombre" class="form-label">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" required class="form-input" />
+        <div class="contact-container">
+          <div class="contact-title">
+            <h2 style="color: white; margin: 0; font-size: 2.5rem; font-weight: 700;">Contacto</h2>
+          </div>
+          <div class="contact-subtitle">
+            <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 1.1rem;">¡Conectemos y colaboremos!</p>
+            <p style="color: rgba(255, 255, 255, 0.8); margin-top: 0.5rem; font-size: 1rem;">¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología?</p>
           </div>
           
-          <div class="form-group">
-            <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" id="email" name="_replyto" required class="form-input" />
-          </div>
-          
-          <div class="form-group">
-            <label for="asunto" class="form-label">Asunto</label>
-            <input type="text" id="asunto" name="_subject" required class="form-input" />
-          </div>
-          
-          <div class="form-group">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required class="form-textarea"></textarea>
-          </div>
-          
-          <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact" />
-          <input type="hidden" name="_language" value="es" />
-          
-          <div style="text-align: center;">
+          <form action="https://formspree.io/f/mwpqnpzo" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required class="form-input" />
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" id="email" name="_replyto" required class="form-input" />
+            </div>
+            
+            <div class="form-group">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" id="asunto" name="_subject" required class="form-input" />
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required class="form-textarea"></textarea>
+            </div>
+            
+            <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact" />
+            <input type="hidden" name="_language" value="es" />
+            
             <button type="submit" class="submit-btn">Enviar Mensaje</button>
-          </div>
-          
-          <p class="form-success">Formulario configurado y listo para recibir mensajes</p>
-        </form>
+            
+            <p class="form-success">Formulario configurado y listo para recibir mensajes</p>
+          </form>
+        </div>
     design:
       columns: '1'
 ---
