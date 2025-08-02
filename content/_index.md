@@ -126,9 +126,46 @@ sections:
         ¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? 
         No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
         
+        ### 📧 Información de Contacto
+        
         **📧 Email:** [abelg4446@gmail.com](mailto:abelg4446@gmail.com)  
         **📱 Teléfono:** +1 809 351 8297  
         **📍 Ubicación:** Santo Domingo, República Dominicana
+        
+        ### 📝 Formulario de Contacto
+        
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 600px; margin: 2rem auto; padding: 2rem; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          <div style="margin-bottom: 1.5rem;">
+            <label for="nombre" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Email *</label>
+            <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label for="asunto" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Asunto *</label>
+            <input type="text" id="asunto" name="_subject" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label for="mensaje" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; resize: vertical; box-sizing: border-box;"></textarea>
+          </div>
+          
+          <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact" />
+          <input type="hidden" name="_language" value="es" />
+          
+          <button type="submit" style="background: #007bff; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s;" onmouseover="this.style.background='#0056b3'" onmouseout="this.style.background='#007bff'">
+            📤 Enviar Mensaje
+          </button>
+          
+          <p style="margin-top: 1rem; font-size: 0.875rem; color: #666; text-align: center;">
+            💡 <em>Para configurar el formulario, necesitas crear una cuenta gratuita en <a href="https://formspree.io" target="_blank" style="color: #007bff;">Formspree.io</a> y reemplazar YOUR_FORM_ID</em>
+          </p>
+        </form>
     design:
       columns: '1'
       background:
