@@ -135,7 +135,7 @@ sections:
       title: "Contacto"
       subtitle: "¡Conectemos y colaboremos!"
       text: |-
-        {{< contact-form >}}
+        {{< contact-form-simple >}}
     design:
       columns: '1'
       spacing:
