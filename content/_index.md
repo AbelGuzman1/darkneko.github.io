@@ -148,34 +148,26 @@ sections:
 
   - block: markdown
     content:
-      title: ""
+      title: "Redes Sociales"
       text: |-
-        <div style="text-align: center; margin-top: 2rem;">
-          <h3>También puedes encontrarme en:</h3>
-          <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
-            <a href="mailto:abelg4446@gmail.com" style="text-decoration: none; color: inherit;">
-              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
-                <i class="fas fa-envelope" style="font-size: 2.5rem; color: #dc3545; margin-bottom: 0.5rem;"></i>
-                <span style="font-weight: 500;">Email</span>
-              </div>
+        <div style="text-align: center; margin-top: 1rem;">
+          <p style="margin-bottom: 2rem; color: #666;">También puedes encontrarme en:</p>
+          <div style="display: flex; justify-content: center; gap: 3rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            <a href="mailto:abelg4446@gmail.com" style="text-decoration: none; color: #dc3545; text-align: center; display: block;">
+              <div style="font-size: 2rem; margin-bottom: 0.5rem;">📧</div>
+              <span style="font-weight: 500; display: block;">Email</span>
             </a>
-            <a href="https://github.com/AbelGuzman1" target="_blank" style="text-decoration: none; color: inherit;">
-              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
-                <i class="fab fa-github" style="font-size: 2.5rem; color: #333; margin-bottom: 0.5rem;"></i>
-                <span style="font-weight: 500;">GitHub</span>
-              </div>
+            <a href="https://github.com/AbelGuzman1" target="_blank" style="text-decoration: none; color: #333; text-align: center; display: block;">
+              <div style="font-size: 2rem; margin-bottom: 0.5rem;">💻</div>
+              <span style="font-weight: 500; display: block;">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/abeleliasguzman/" target="_blank" style="text-decoration: none; color: inherit;">
-              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
-                <i class="fab fa-linkedin" style="font-size: 2.5rem; color: #0077b5; margin-bottom: 0.5rem;"></i>
-                <span style="font-weight: 500;">LinkedIn</span>
-              </div>
+            <a href="https://www.linkedin.com/in/abeleliasguzman/" target="_blank" style="text-decoration: none; color: #0077b5; text-align: center; display: block;">
+              <div style="font-size: 2rem; margin-bottom: 0.5rem;">💼</div>
+              <span style="font-weight: 500; display: block;">LinkedIn</span>
             </a>
-            <a href="https://wa.me/8093518297" target="_blank" style="text-decoration: none; color: inherit;">
-              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
-                <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: #25d366; margin-bottom: 0.5rem;"></i>
-                <span style="font-weight: 500;">WhatsApp</span>
-              </div>
+            <a href="https://wa.me/8093518297" target="_blank" style="text-decoration: none; color: #25d366; text-align: center; display: block;">
+              <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+              <span style="font-weight: 500; display: block;">WhatsApp</span>
             </a>
           </div>
         </div>
