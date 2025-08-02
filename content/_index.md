@@ -126,84 +126,136 @@ sections:
         ¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? 
         No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
         
-        ### 📧 Información de Contacto
+        <style>
+        /* Estilos adaptativos para tema claro/oscuro */
+        .contact-form {
+          max-width: 650px;
+          margin: 2rem auto;
+          padding: 3rem;
+          border-radius: 16px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+          transition: all 0.3s ease;
+          background: linear-gradient(135deg, rgba(25, 135, 84, 0.05) 0%, rgba(25, 135, 84, 0.1) 100%);
+          border: 1px solid rgba(25, 135, 84, 0.2);
+        }
         
-        **📧 Email:** [abelg4446@gmail.com](mailto:abelg4446@gmail.com)  
-        **📱 Teléfono:** +1 809 351 8297  
-        **📍 Ubicación:** Santo Domingo, República Dominicana
+        [data-theme="dark"] .contact-form {
+          background: linear-gradient(135deg, rgba(25, 135, 84, 0.1) 0%, rgba(25, 135, 84, 0.15) 100%);
+          border: 1px solid rgba(25, 135, 84, 0.3);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
         
-        ### 📝 Formulario de Contacto
+        .form-group {
+          margin-bottom: 1.75rem;
+          position: relative;
+        }
         
-        <form action="https://formspree.io/f/mwpqnpzo" method="POST" style="max-width: 600px; margin: 2rem auto; padding: 2rem; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-          <div style="margin-bottom: 1.5rem;">
-            <label for="nombre" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Nombre completo *</label>
-            <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
+        .form-label {
+          display: block;
+          margin-bottom: 0.75rem;
+          font-weight: 600;
+          color: #198754;
+          font-size: 0.95rem;
+          letter-spacing: 0.5px;
+        }
+        
+        [data-theme="dark"] .form-label {
+          color: #20c997;
+        }
+        
+        .form-input, .form-textarea {
+          width: 100%;
+          padding: 1rem 1.25rem;
+          border: 2px solid rgba(25, 135, 84, 0.2);
+          border-radius: 8px;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+          background: rgba(255, 255, 255, 0.8);
+          color: #333;
+          box-sizing: border-box;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+          outline: none;
+          border-color: #198754;
+          box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.1);
+          transform: translateY(-2px);
+        }
+        
+        [data-theme="dark"] .form-input, [data-theme="dark"] .form-textarea {
+          background: rgba(40, 44, 52, 0.8);
+          color: #f8f9fa;
+          border-color: rgba(25, 135, 84, 0.3);
+        }
+        
+        [data-theme="dark"] .form-input:focus, [data-theme="dark"] .form-textarea:focus {
+          border-color: #20c997;
+          box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.2);
+        }
+        
+        .submit-btn {
+          background: linear-gradient(135deg, #198754 0%, #20c997 100%);
+          color: white;
+          padding: 1rem 2.5rem;
+          border: none;
+          border-radius: 8px;
+          font-size: 1.1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(25, 135, 84, 0.3);
+          letter-spacing: 0.5px;
+        }
+        
+        .submit-btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 8px 25px rgba(25, 135, 84, 0.4);
+          background: linear-gradient(135deg, #157347 0%, #1aa179 100%);
+        }
+        
+        .form-success {
+          margin-top: 1.5rem;
+          font-size: 0.9rem;
+          color: #198754;
+          text-align: center;
+          font-weight: 500;
+        }
+        
+        [data-theme="dark"] .form-success {
+          color: #20c997;
+        }
+        </style>
+        
+        <form action="https://formspree.io/f/mwpqnpzo" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required class="form-input" />
           </div>
           
-          <div style="margin-bottom: 1.5rem;">
-            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Email *</label>
-            <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
+          <div class="form-group">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" id="email" name="_replyto" required class="form-input" />
           </div>
           
-          <div style="margin-bottom: 1.5rem;">
-            <label for="asunto" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Asunto *</label>
-            <input type="text" id="asunto" name="_subject" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
+          <div class="form-group">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" id="asunto" name="_subject" required class="form-input" />
           </div>
           
-          <div style="margin-bottom: 1.5rem;">
-            <label for="mensaje" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333;">Mensaje *</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; resize: vertical; box-sizing: border-box;"></textarea>
+          <div class="form-group">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required class="form-textarea"></textarea>
           </div>
           
           <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact" />
           <input type="hidden" name="_language" value="es" />
           
-          <button type="submit" style="background: #007bff; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s;" onmouseover="this.style.background='#0056b3'" onmouseout="this.style.background='#007bff'">
-            📤 Enviar Mensaje
-          </button>
+          <div style="text-align: center;">
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+          </div>
           
-          <p style="margin-top: 1rem; font-size: 0.875rem; color: #28a745; text-align: center;">
-            ✅ <em>Formulario configurado y listo para recibir mensajes</em>
-          </p>
+          <p class="form-success">Formulario configurado y listo para recibir mensajes</p>
         </form>
     design:
       columns: '1'
-      background:
-        color: 'rgb(248, 249, 250)'
-        text_color_light: false
-      spacing:
-        padding: ['2rem', '1rem', '1rem', '1rem']
-
-  - block: markdown
-    content:
-      title: "Redes Sociales"
-      text: |-
-        <div style="text-align: center; margin-top: 1rem;">
-          <p style="margin-bottom: 2rem; color: #666;">También puedes encontrarme en:</p>
-          <div style="display: flex; justify-content: center; gap: 3rem; margin-top: 1.5rem; flex-wrap: wrap;">
-            <a href="mailto:abelg4446@gmail.com" style="text-decoration: none; color: #dc3545; text-align: center; display: block;">
-              <div style="font-size: 2rem; margin-bottom: 0.5rem;">📧</div>
-              <span style="font-weight: 500; display: block;">Email</span>
-            </a>
-            <a href="https://github.com/AbelGuzman1" target="_blank" style="text-decoration: none; color: #333; text-align: center; display: block;">
-              <div style="font-size: 2rem; margin-bottom: 0.5rem;">💻</div>
-              <span style="font-weight: 500; display: block;">GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/abeleliasguzman/" target="_blank" style="text-decoration: none; color: #0077b5; text-align: center; display: block;">
-              <div style="font-size: 2rem; margin-bottom: 0.5rem;">💼</div>
-              <span style="font-weight: 500; display: block;">LinkedIn</span>
-            </a>
-            <a href="https://wa.me/8093518297" target="_blank" style="text-decoration: none; color: #25d366; text-align: center; display: block;">
-              <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
-              <span style="font-weight: 500; display: block;">WhatsApp</span>
-            </a>
-          </div>
-        </div>
-    design:
-      columns: '1'
-      background:
-        color: 'rgb(247, 247, 247)'
-        text_color_light: false
-      spacing:
-        padding: ['2rem', '1rem', '2rem', '1rem']
 ---
