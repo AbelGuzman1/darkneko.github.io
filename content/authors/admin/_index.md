@@ -31,31 +31,31 @@ organizations:
 profiles:
   - icon: at-symbol
     url: 'mailto:abelg4446@gmail.com'
-    label:  Correo Electrónico
+    label: Correo Electrónico
   - icon: brands/github
     url: https://github.com/AbelGuzman1
-    label:  GitHub
+    label: GitHub
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/abeleliasguzman/
-    label:  LinkedIn
+    label: LinkedIn
   - icon: brands/whatsapp
     url: 'https://wa.me/8093518297'
-    label:  WhatsApp
+    label: WhatsApp
   - icon: document-arrow-down
     url: 'uploads/CV_Abel_Guzman_Software_ITLA.pdf'
-    label: ' Descargar CV'
+    label: Descargar CV
 
 # Interests
 interests:
-  -  Desarrollo de Software
-  -  Programación Web Full-Stack
-  -  Desarrollo Frontend (React, Vue.js)
-  -  Desarrollo Backend (Node.js, .NET)
-  -  Bases de Datos (SQL Server, MySQL)
-  -  Tecnologías en la Nube (Azure, AWS)
-  -  DevOps y Contenedores (Docker, Kubernetes)
-  -  Inteligencia Artificial y Machine Learning
-  -  Análisis de Datos y Business Intelligence
+  - Desarrollo de Software
+  - Programación Web Full-Stack
+  - Desarrollo Frontend (React, Vue.js)
+  - Desarrollo Backend (Node.js, .NET)
+  - Bases de Datos (SQL Server, MySQL)
+  - Tecnologías en la Nube (Azure, AWS)
+  - DevOps y Contenedores (Docker, Kubernetes)
+  - Inteligencia Artificial y Machine Learning
+  - Análisis de Datos y Business Intelligence
 
 # Education
 education:

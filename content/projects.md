@@ -1,5 +1,5 @@
 ﻿---
-title: ' Proyectos'
+title: 'Proyectos'
 date: 2024-05-19
 type: landing
 design:
@@ -10,7 +10,7 @@ design:
 sections:
   - block: collection
     content:
-      title:  Proyectos Seleccionados
+      title: Proyectos Seleccionados
       text: |-
         Disfruto crear cosas innovadoras y útiles. Aquí tienes una selección de proyectos 
         en los que he trabajado a lo largo de los años, abarcando desde desarrollo web 
