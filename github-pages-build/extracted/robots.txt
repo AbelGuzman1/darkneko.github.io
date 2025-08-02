@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Permitir acceso a todos los archivos de imágenes
+Allow: /img/
+
+# Permitir acceso a archivos CSS y JS
+Allow: *.css
+Allow: *.js
+
+# Bloquear archivos temporales o de sistema
+Disallow: *.tmp
+Disallow: /temp/
+Disallow: /cache/
+
+# Información del sitemap
+Sitemap: https://cedomedi.com/sitemap.xml
+
+# Crawl-delay para ser respetuosos con el servidor
+Crawl-delay: 1

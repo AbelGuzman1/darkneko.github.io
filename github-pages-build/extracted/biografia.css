@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D0D7E1; /* Gris claro de fondo */
+    color: #062C43; /* Texto principal azul oscuro */
+    line-height: 1.6;
+}
+
+.biografia-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #FFFFFF; /* Fondo blanco para el contenido */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-biografia {
+    color: #064469; /* Azul medio para el título */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.seccion-biografia {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5790AB; /* Línea divisoria azul claro */
+}
+
+.seccion-biografia:last-child {
+    border-bottom: none;
+}
+
+.subtitulo-biografia {
+    color: #064469; /* Azul medio para los subtítulos */
+    margin-bottom: 15px;
+}
+
+.parrafo-biografia {
+    color: #062C43; /* Azul oscuro para el texto de los párrafos */
+    margin-bottom: 15px;
+}
+
+.destacado-biografia {
+    color: #5790AB; /* Azul claro para destacar información */
+    font-weight: bold;
+}

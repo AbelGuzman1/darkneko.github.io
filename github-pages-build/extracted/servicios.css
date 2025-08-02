@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.servicios-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-servicios {
+    color: #064469;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.servicio-detalle {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subtitulo-servicio {
+    color: #064469;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #064469;
+    padding-bottom: 5px;
+}
+
+.descripcion-servicio {
+    margin-bottom: 20px;
+}
+
+.detalle-titulo {
+    color: #064469;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.lista-herramientas {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.lista-herramientas li {
+    margin-bottom: 5px;
+}
+
+.tecnicas-servicio {
+    margin-bottom: 20px;
+}
+
+.otros-detalles {
+    font-style: italic;
+    color: #5790AB;
+}

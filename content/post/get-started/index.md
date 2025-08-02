@@ -32,7 +32,11 @@ categories:
 
 Bienvenido a mi portafolio digital, donde comparto mi experiencia como estudiante de Tecnólogo en Desarrollo de Software en ITLA y los proyectos que he desarrollado durante mi formación.
 
-{{< toc mobile_only=true is_open=true >}}
+## Tabla de Contenidos
+
+- [Comenzando](#comenzando)
+- [Configuración](#configuración)
+- [Personalización](#personalización)
 
 ## Sobre Este Sitio
 

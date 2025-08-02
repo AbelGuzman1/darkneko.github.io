@@ -1,0 +1,1451 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D0D7E1; /* Gris muy claro */
+    color: #062C43; /* Azul oscuro principal */
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease;
+    /* Mejoras para móvil */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* Mejoras específicas para iOS */
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Optimizaciones específicas para móviles - Performance */
+@media (max-width: 768px) {
+    /* Optimizar hero para móviles */
+    #hero {
+        background-attachment: scroll; /* Mejor rendimiento */
+        background-size: cover;
+        will-change: scroll-position; /* Optimización GPU */
+    }
+    
+    /* Optimizar transiciones para móviles */
+    *, *::before, *::after {
+        transition-duration: 0.2s; /* Transiciones más rápidas */
+    }
+    
+    /* Optimizar scrolling */
+    .main-nav, .servicios-grid {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Optimizaciones específicas para iPhone 11 (375x812px) */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    body {
+        /* Asegurar que el viewport se use correctamente */
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Optimizar botones para el área de toque de iOS */
+    .button, #contacto-breve .boton-red {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* Responsive padding para móvil */
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.section {
+    padding: 80px 0;
+}
+
+/* Secciones más compactas en móvil */
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+    }
+}
+
+.bg-light {
+    background-color: rgb(208,215,225); /* Azul claro para contrastar */
+}
+
+
+/*Etiqueta p*/
+#ubicacion .container p {
+    text-align: center;
+  }
+
+h2 {
+    font-size: 2.5em;
+    color: #064469; /* Azul medio */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* H2 responsive para móvil */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 25px;
+        line-height: 1.3;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button.primary {
+    background-color: #064469; /* Azul medio para botones primarios */
+    color: #D0D7E1; /* Gris claro para texto en botones primarios */
+}
+
+.button.secondary {
+    background-color: #5790AB; /* Azul claro para botones secundarios */
+    color: #FFFFFF; /* Blanco para mejor contraste en botones secundarios */
+}
+
+.button.primary:hover {
+    background-color: #062C43; /* Azul oscuro al pasar el cursor en primarios */
+    color: #FFFFFF;
+}
+
+.button.secondary:hover {
+    background-color: #064469; /* Azul medio al pasar el cursor en secundarios */
+    color: #FFFFFF;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+/* Header */
+header {
+    background-color: #FFFFFF; /* Blanco para el header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px; /* Alinea los botones de la derecha */
+}
+
+    
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #064469; /* Azul medio para el logo */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los items del menú */
+    justify-content: flex-end; /* Alinea los items del menú a la derecha */
+}
+
+.main-nav li {
+    margin-left: 10px;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.main-nav a:hover {
+    color: #0353a9;
+}
+
+.main-nav a img {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.3em;
+    vertical-align: middle;
+}
+
+
+
+
+.main-nav li:nth-child(1) a img,
+.main-nav li:nth-child(2) a img,
+.main-nav li:nth-child(3) a img,
+.main-nav li:nth-child(4) a img {
+    width: 1.2em; /* Ajusta el tamaño del icono */
+    height: 1.2em; /* Ajusta el tamaño del icono */
+    margin-left: 0.5em; /* Espacio entre el texto y el icono (a la derecha) */
+    vertical-align: middle; /* Alineación vertical con el texto */
+}
+
+.main-nav li:nth-child(5) a { /* Botón Agendar Cita */
+    background-color: #0056b3; /* Azul más oscuro para mejor contraste */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav li:nth-child(5) a:hover {
+    background-color: #003d82; /* Un tono aún más oscuro al pasar el ratón */
+}
+
+.cita-whatsapp-link { /* Ocultar el enlace duplicado de WhatsApp en el menú principal */
+    display: none !important;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #003757; /* Azul medio para el menú hamburguesa */
+    margin: 3px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('img/fondo 1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 80px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+/* Hero responsive para móvil */
+@media (max-width: 768px) {
+    #hero {
+        min-height: 350px;
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        min-height: 300px;
+        padding: 40px 15px;
+        background-attachment: scroll; /* Mejor performance en móvil */
+        background-size: cover;
+        background-position: center top; /* Optimizado para móvil */
+    }
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 68, 99, 0.838); /* Color de filtro (azul oscuro, 50% opaco) */
+    opacity: 0.9;  /* Ajusté la opacidad general a 0.7 */
+    z-index: 1;
+    pointer-events: none;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* H1 responsive para móvil */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.2em;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 1.8em;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+}
+
+#hero p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 auto 30px auto; /* Centrar horizontalmente */
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Párrafo responsive para móvil */
+@media (max-width: 768px) {
+    #hero p {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero p {
+        font-size: 1em;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+}
+
+#hero .button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .button:hover {
+    background-color: #0056b3;
+}
+
+#hero .hero-image {
+    display: none; /* Oculta la imagen duplicada (ya que es fondo) */
+}
+
+#hero .container .hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Servicios Principales */
+#servicios-principales .servicios-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Grid responsive para móvil */
+@media (max-width: 768px) {
+    #servicios-principales .servicios-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #servicios-principales .servicios-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.servicio {
+    background-color: #FFFFFF; /* Blanco para las tarjetas de servicio */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Tarjetas de servicio responsive */
+@media (max-width: 768px) {
+    .servicio {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio {
+        padding: 20px;
+        margin: 0 10px;
+    }
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Deshabilitar hover en móvil para mejor UX */
+@media (max-width: 768px) {
+    .servicio:hover {
+        transform: none;
+    }
+}
+
+.servicio i {
+    font-size: 2em;
+    color: #5790AB; /* Azul claro para los iconos de servicio */
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    color: #064469; /* Azul medio para los títulos de servicio */
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    color: #212529; /* Un gris más oscuro para el texto de servicio, mejor contraste */
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Sobre Nosotros Breve */
+#sobre-nosotros-breve {
+    background-color: #ffffff;
+}
+
+#sobre-nosotros-breve .sobre-nosotros-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Grid "Sobre Nosotros" responsive */
+@media (max-width: 768px) {
+    #sobre-nosotros-breve .sobre-nosotros-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+.sobre-nosotros-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 1/1;
+}
+
+/* Imagen responsive para móvil */
+@media (max-width: 480px) {
+    .sobre-nosotros-imagen img {
+        max-width: 300px;
+    }
+}
+
+.sobre-nosotros-texto {
+    padding-left: 50px;
+}
+
+/* Texto responsive para móvil */
+@media (max-width: 768px) {
+    .sobre-nosotros-texto {
+        padding-left: 0;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-nosotros-texto {
+        padding: 0 15px;
+    }
+}
+
+.sobre-nosotros-texto h2 {
+    color: #064469; /* Azul medio */
+    text-align: left;
+}
+
+/* Contacto Breve */
+#contacto-breve {
+    background-color: #ffffff; /* Un verde lima llamativo */
+    padding: 40px 20px; /* Reduje el padding vertical */
+}
+
+#contacto-breve .container {
+    max-width: 800px; /* Reduje el ancho máximo del contenedor */
+}
+
+#contacto-breve h2 {
+    font-size: 2em; /* Opcional: reduce el tamaño del título */
+    margin-bottom: 20px; /* Ajusta el margen inferior del título */
+}
+
+#contacto-breve p {
+    font-size: 0.9em; /* Opcional: reduce el tamaño del párrafo */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas si reduces el tamaño de la fuente */
+    margin-bottom: 25px; /* Ajusta el margen inferior del párrafo */
+}
+
+/* Formulario Contacto */
+.formulario-wrapper {
+    background-color: #f8f9fa; /* Un gris muy claro de fondo */
+    padding: 20px; /* Reduje el padding interno del formulario */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Formulario responsive para móvil */
+@media (max-width: 768px) {
+    .formulario-wrapper {
+        padding: 25px 20px;
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario-wrapper {
+        padding: 20px 15px;
+        margin: 15px 5px;
+        border-radius: 8px;
+    }
+}
+
+.formulario-wrapper h2 {
+    color: #064469; /* Azul medio */
+    margin-bottom: 20px;
+    font-size: 2.8em;
+}
+
+/* H2 del formulario responsive */
+@media (max-width: 768px) {
+    .formulario-wrapper h2 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario-wrapper h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+}
+
+.formulario-wrapper p {
+    color: #212529; /* Un gris más oscuro para mejor contraste */
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Párrafo del formulario responsive */
+@media (max-width: 480px) {
+    .formulario-wrapper p {
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+}
+
+.formulario-interactivo .form-group {
+    position: relative; /* Para el icono dentro del input */
+    margin-bottom: 15px; /* Ajusta el margen inferior de los grupos de formulario */
+}
+
+.formulario-interactivo label {
+    display: block;
+    margin-bottom: 5px; /* Ajusta el margen inferior de la etiqueta */
+    font-weight: bold;
+    color: #064469;
+    font-size: 0.9em; /* Opcional: reduce el tamaño de la etiqueta */
+}
+
+.formulario-interactivo label i {
+    margin-right: 8px;
+    color: #5790AB; /* Azul claro para los iconos de los labels */
+}
+
+.formulario-interactivo input[type="text"],
+.formulario-interactivo input[type="email"],
+.formulario-interactivo input[type="tel"],
+.formulario-interactivo textarea {
+    width: calc(100% - 20px);
+    padding: 8px; /* Reduje el padding de los campos de entrada */
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 0.9em; /* Opcional: reduce el tamaño de la fuente de los campos */
+    color: #212529; /* Un gris más oscuro para mejor contraste */
+    margin-bottom: 15px; /* Reduje el margen inferior */
+    transition: border-color 0.3s ease;
+}
+
+.formulario-interactivo input:focus,
+.formulario-interactivo textarea:focus {
+    border-color: #5790AB; /* Resaltar al enfocar */
+    outline: none;
+}
+
+.formulario-interactivo textarea {
+    resize: vertical;
+}
+
+.enviar-animado {
+    padding: 8px 15px; /* Reduje el padding del botón */
+    font-size: 0.9em; /* Opcional: reduce el tamaño de la fuente del botón */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enviar-animado i {
+    margin-right: 10px;
+}
+
+.enviar-animado:hover {
+    background-color: #062C43; /* Azul oscuro al pasar el cursor */
+    transform: scale(1.05);
+}
+
+
+
+
+/* Estilos para los botones de redes sociales */
+#contacto-breve .otros-contactos {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contacto-breve .otros-contactos p {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: #495057; /* Un gris más oscuro para mejor contraste */
+}
+
+#contacto-breve .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Aumenté un poco el espacio */
+    flex-wrap: wrap; /* Permite que los iconos se envuelvan en móvil */
+}
+
+/* Redes sociales responsive para móvil */
+@media (max-width: 480px) {
+    #contacto-breve .redes-sociales {
+        gap: 15px;
+        padding: 0 20px;
+    }
+}
+
+#contacto-breve .boton-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px; /* Aumenté el tamaño */
+    height: 48px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    background-color: #f0f0f0;
+}
+
+/* Botones de redes sociales responsive */
+@media (max-width: 480px) {
+    #contacto-breve .boton-red {
+        width: 44px;
+        height: 44px;
+        /* Mejor área de toque en móvil */
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+#contacto-breve .boton-red:hover {
+    opacity: 0.9; /* Ligeramente menos transparente al pasar el cursor */
+    transform: scale(1.08); /* Aumenté un poco la escala */
+}
+
+/* Deshabilitar efectos hover en móvil */
+@media (max-width: 768px) {
+    #contacto-breve .boton-red:hover {
+        transform: none;
+    }
+}
+
+#contacto-breve .boton-red img {
+    width: 24px; /* Aumenté el tamaño de la imagen */
+    height: 24px;
+    opacity: 0.8; /* Ligeramente más opaco */
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Iconos responsive para móvil */
+@media (max-width: 480px) {
+    #contacto-breve .boton-red img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+#contacto-breve .boton-red:hover img {
+    opacity: 1;
+}
+
+/* Oculta los iconos de Font Awesome (si los estás usando) */
+#contacto-breve .otros-contactos .redes-sociales a i {
+    display: none;
+}
+
+/* Estilos de color para cada red social (MANTENIENDO LOS COLORES) */
+#contacto-breve .social-whatsapp {
+    background-color: #e0f2e1; /* Verde muy pálido */
+}
+
+#contacto-breve .social-instagram {
+    background-color: #f3e5f5; /* Morado muy pálido */
+}
+
+#contacto-breve .social-facebook {
+    background-color: #e8f3fd; /* Azul muy pálido */
+}
+
+#contacto-breve .social-email {
+    background-color: #ffe0b2; /* Naranja muy pálido */
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #062C43;
+    color: #D0D7E1;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.6;
+    border-top: 3px solid #5790AB; /* Borde superior decorativo */
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+}
+
+.footer-nav {
+    flex: 1;
+    text-align: right;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #5790AB;
+    transition: color 0.3s ease-in-out;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Resplandor sutil al pasar el cursor */
+}
+
+/* Estilos para el crédito de desarrollador */
+.developer-credit {
+    font-size: 0.7em;
+    color: rgba(160, 168, 179, 0.7);
+    margin: 0;
+    padding-top: 15px;
+    border-top: 1px solid rgba(87, 144, 171, 0.2);
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.developer-credit a {
+    color: rgba(87, 144, 171, 0.8);
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.developer-credit a:hover {
+    color: #8cc8e0;
+    border-bottom-color: rgba(140, 200, 224, 0.5);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .footer-nav {
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-nav ul li {
+        margin: 0;
+    }
+    
+    .developer-credit {
+        font-size: 0.65em;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+}
+
+
+
+/*RESPONSIVE*/
+
+nav ul.main-nav {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el relleno */
+    margin: 0; /* Quita el margen */
+    display: flex; /* Usa Flexbox para la disposición */
+    justify-content: flex-start; /* Alinea los elementos al inicio en pantallas grandes */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+nav ul.main-nav li {
+    margin-left: 20px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul.main-nav li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #5790AB; /* Color del texto del enlace */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    display: flex; /* Usa Flexbox para alinear ícono y texto */
+    align-items: center; /* Centra ícono y texto verticalmente */
+    padding: 8px; /* Añade relleno para que sea más fácil tocar en móvil */
+}
+
+nav ul.main-nav li a img {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    max-height: 24px; /* Altura máxima del ícono (ajusta según necesites) */
+}
+
+nav ul.main-nav li a:hover {
+    color: #064469; /* Color del texto al pasar el ratón */
+}
+
+
+
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+    /* ... otros estilos ... */
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute; /* Posición absoluta */
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+    }
+
+    .bar {
+        width: 25px; /* Ancho de la barra */
+        height: 3px; /* Alto de la barra */
+        background-color: #064469; /* Color de la barra */
+        margin: 3px 0; /* Espacio alrededor de la barra */
+        transition: transform 0.3s ease; /* Transición suave para la animación */
+    }
+
+    nav ul.main-nav {
+        display: none; /* Oculto por defecto */
+        position: absolute; /* Posición absoluta */
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    nav ul.main-nav.active {
+        display: flex; /* Se muestra cuando tiene la clase 'active' */
+    }
+
+    nav ul.main-nav li {
+        margin: 0; /* Quita el margen */
+        padding: 8px 0; /* Relleno arriba y abajo */
+        border-bottom: 1px solid #e0e0e0; /* Línea divisoria */
+        width: 100%; /* Ancho completo */
+    }
+
+    nav ul.main-nav li:last-child {
+        border-bottom: none; /* Quita la línea de la última opción */
+    }
+
+    nav ul.main-nav li a {
+        color: #064469; /* Color del texto en el menú móvil */
+        display: flex; /* Usa Flexbox */
+        align-items: center; /* Centra verticalmente */
+        width: 100%; /* Ancho completo */
+        padding: 10px; /* Relleno */
+        box-sizing: border-box; /* Incluye el relleno en el ancho */
+    }
+
+    nav ul.main-nav li a img {
+        max-height: 20px; /* Íconos más pequeños en móvil */
+        margin-right: 10px; /* Espacio entre ícono y texto */
+    }
+
+    .cita-whatsapp-link {
+        display: block; /* Convierte el enlace en bloque */
+        width: 100%; /* Ancho completo */
+        text-align: center; /* Centra el texto */
+        margin-top: 10px; /* Espacio arriba */
+    }
+}
+
+
+
+
+/*Menu hamburguesa*/
+
+/* Estilos para el botón de menú (hamburguesa) en móvil (sin cambios) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #003757;
+    margin: 3px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para el menú en móvil */
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 70px; /* Ajusta según la altura de tu header */
+        left: 0;
+        width: 100%;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+        background-color: #FFFFFF;
+        display: grid; /* Usamos Grid */
+        grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+        grid-template-rows: auto auto;    /* Ajuste automático para dos filas */
+        gap: 10px; /* Espacio entre las celdas */
+        padding: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .main-nav.active {
+        display: grid; /* Aseguramos que Grid se active */
+    }
+
+    .main-nav li {
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;       /* Flexbox para alinear el contenido */
+        align-items: center; /* Centramos verticalmente */
+    }
+
+    .main-nav li a {
+        color: #064469;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+
+    .main-nav li a img {
+        margin-right: 5px;
+    }
+}
+
+/* ========================================
+   OPTIMIZACIONES MÓVILES MEJORADAS
+   ======================================== */
+
+/* iPhone 11 y dispositivos similares (375x812) */
+@media only screen and (max-width: 414px) {
+    
+    /* Mejoras generales para pantallas pequeñas */
+    body {
+        font-size: 16px; /* Evita zoom automático en iOS */
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    
+    /* Header optimizado para móvil */
+    header {
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .logo a {
+        font-size: 1.3em;
+    }
+    
+    .logo img {
+        max-height: 35px;
+    }
+    
+    /* Hero section específico para iPhone 11 */
+    #hero {
+        min-height: 70vh;
+        padding: 80px 20px 60px;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    #hero h1 {
+        font-size: 2.2em;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    #hero p {
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #hero .button {
+        padding: 15px 30px;
+        font-size: 1.1em;
+        min-height: 44px; /* Apple touch target size */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+    }
+    
+    #hero .button:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 8px rgba(0,123,255,0.4);
+    }
+    
+    /* Secciones principales */
+    .section {
+        padding: 50px 0;
+    }
+    
+    h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        line-height: 1.3;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    /* Grid de servicios optimizado */
+    #servicios-principales .servicios-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .servicio {
+        padding: 25px 20px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+    
+    .servicio:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    
+    .servicio h3 {
+        font-size: 1.3em;
+        margin-bottom: 12px;
+        line-height: 1.3;
+    }
+    
+    .servicio p {
+        font-size: 0.95em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    /* Sobre nosotros responsive */
+    #sobre-nosotros-breve .sobre-nosotros-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .sobre-nosotros-imagen {
+        order: -1;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .sobre-nosotros-imagen img {
+        width: 100%;
+        border-radius: 12px;
+    }
+    
+    .sobre-nosotros-texto {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .sobre-nosotros-texto h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    /* Formulario de contacto optimizado */
+    .formulario-wrapper {
+        padding: 25px 20px;
+        margin: 20px 10px;
+        border-radius: 12px;
+    }
+    
+    .formulario-wrapper h2 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    
+    .formulario-wrapper p {
+        font-size: 1em;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    
+    .formulario-interactivo input[type="text"],
+    .formulario-interactivo input[type="email"],
+    .formulario-interactivo input[type="tel"],
+    .formulario-interactivo textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px; /* Evita zoom en iOS */
+        border-radius: 8px;
+        border: 2px solid #e0e0e0;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        appearance: none;
+        transition: border-color 0.3s ease;
+    }
+    
+    .formulario-interactivo input:focus,
+    .formulario-interactivo textarea:focus {
+        border-color: #5790AB;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(87, 144, 171, 0.1);
+    }
+    
+    .enviar-animado {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1em;
+        min-height: 50px;
+        border-radius: 8px;
+        margin-top: 10px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .enviar-animado:active {
+        transform: translateY(1px);
+    }
+    
+    /* Redes sociales optimizadas */
+    .redes-sociales {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .boton-red {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .boton-red:active {
+        transform: scale(0.95);
+    }
+    
+    .boton-red img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Mapa responsive */
+    .mapa-container {
+        margin: 20px 0;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .mapa-container iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+    }
+    
+    /* Footer optimizado */
+    footer {
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    footer nav ul li {
+        margin: 0;
+    }
+    
+    /* Mejoras de performance y UX para móvil */
+    * {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    
+    button, .button, a {
+        touch-action: manipulation;
+    }
+    
+    /* Scrolling suave en iOS */
+    html {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Optimizaciones específicas para iPhone 11 (375x812) */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    
+    /* Ajustes específicos para la pantalla del iPhone 11 */
+    #hero {
+        min-height: 65vh;
+        padding-top: 100px; /* Compensa la barra de estado */
+    }
+    
+    /* Ajuste para el notch del iPhone 11 */
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+    
+    header {
+        padding-top: calc(15px + env(safe-area-inset-top));
+    }
+    
+    /* Optimización del viewport para iPhone 11 */
+    .container {
+        max-width: 345px; /* 375px - 30px padding */
+    }
+}
+
+/* Mejoras adicionales para tablets (iPad) */
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    
+    .container {
+        padding: 0 30px;
+    }
+    
+    #hero {
+        min-height: 60vh;
+        padding: 80px 30px 60px;
+    }
+    
+    #hero h1 {
+        font-size: 2.8em;
+    }
+    
+    #hero p {
+        font-size: 1.2em;
+        max-width: 80%;
+    }
+    
+    #servicios-principales .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    #sobre-nosotros-breve .sobre-nosotros-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .sobre-nosotros-texto {
+        text-align: left;
+    }
+}

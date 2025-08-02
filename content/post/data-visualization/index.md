@@ -33,7 +33,7 @@ Guarda tu JSON de Plotly en la carpeta de tu página, por ejemplo `line-chart.js
 
 **Demostración:**
 
-{{< chart data="line-chart" >}}
+[Ver gráfico de líneas](line-chart.json)
 
 También puede ser útil el [Editor JSON de Plotly](http://plotly-json-editor.getforge.io/).
 
@@ -147,7 +147,7 @@ Guarda tu hoja de cálculo como un archivo CSV en la carpeta de tu página y lue
 
 se renderiza como:
 
-{{< table path="results.csv" header="true" caption="Tabla 1: Resultados del análisis" >}}
+[Ver tabla de resultados](results.csv)
 
 ## Aplicaciones en el Desarrollo de Software
 
