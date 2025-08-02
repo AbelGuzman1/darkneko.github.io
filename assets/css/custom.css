@@ -1,0 +1,61 @@
+/* Estilos personalizados para la sección de contacto */
+#contact {
+  background: linear-gradient(135deg, #1e3a2e 0%, #2d5a3d 30%, #198754 70%, #20c997 100%) !important;
+  padding: 3rem 2rem !important;
+  margin: 0 -2rem !important;
+  border-radius: 0 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] #contact {
+  background: linear-gradient(135deg, #0f2419 0%, #1a3326 30%, #145a3c 70%, #1aa179 100%) !important;
+}
+
+#contact h2, #contact h3 {
+  color: white !important;
+  text-align: center !important;
+}
+
+#contact p {
+  color: white !important;
+  text-align: center !important;
+}
+
+/* Efectos hover para los botones de redes sociales */
+#contact a:hover {
+  background: rgba(255,255,255,0.25) !important;
+  transform: translateY(-3px) !important;
+  color: white !important;
+}
+
+/* Efectos hover para el botón de envío */
+#contact button:hover {
+  background: #157347 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  #contact {
+    padding: 2rem 1rem !important;
+    margin: 0 -1rem !important;
+  }
+  
+  #contact > div > div {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+  
+  #contact a {
+    padding: 0.75rem !important;
+    font-size: 0.9rem !important;
+    min-height: 45px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact > div > div {
+    grid-template-columns: 1fr !important;
+    max-width: 300px !important;
+  }
+}
