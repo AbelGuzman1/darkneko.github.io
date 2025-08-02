@@ -1,0 +1,61 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+  {{ if .Title }}
+    <h1 class="text-4xl font-bold mb-8">{{ .Title }}</h1>
+  {{ end }}
+  
+  {{ if .Content }}
+    <div class="prose mb-8">
+      {{ .Content }}
+    </div>
+  {{ end }}
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ range .Pages }}
+      <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+        {{ if .Params.image }}
+          <div class="h-48 bg-gray-200">
+            <!-- Image placeholder -->
+          </div>
+        {{ end }}
+        
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">
+            <a href="{{ .Permalink }}" class="text-blue-600 hover:text-blue-800">
+              {{ .Title }}
+            </a>
+          </h2>
+          
+          {{ if .Params.summary }}
+            <p class="text-gray-600 mb-3">{{ .Params.summary }}</p>
+          {{ else if .Summary }}
+            <p class="text-gray-600 mb-3">{{ .Summary }}</p>
+          {{ end }}
+          
+          {{ if .Date }}
+            <div class="text-sm text-gray-500 mb-3">
+              {{ .Date.Format "January 2, 2006" }}
+            </div>
+          {{ end }}
+          
+          {{ if .Params.tags }}
+            <div class="flex flex-wrap gap-1">
+              {{ range first 3 .Params.tags }}
+                <span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
+                  {{ . }}
+                </span>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  
+  {{ if eq (len .Pages) 0 }}
+    <div class="text-center py-12">
+      <p class="text-gray-500 text-lg">No content available.</p>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

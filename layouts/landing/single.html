@@ -1,0 +1,188 @@
+{{ define "main" }}
+<div class="min-h-screen">
+  {{ if .Params.sections }}
+    {{ range .Params.sections }}
+      {{ $block_type := .block | default "unknown" }}
+      
+      {{ if eq $block_type "hero" }}
+        <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
+          <div class="container mx-auto px-4 text-center">
+            {{ if .content.title }}
+              <h1 class="text-5xl font-bold mb-6">{{ .content.title }}</h1>
+            {{ end }}
+            {{ if .content.text }}
+              <p class="text-xl mb-8">{{ .content.text | markdownify }}</p>
+            {{ end }}
+            {{ if .content.primary_action }}
+              <a href="{{ .content.primary_action.url }}" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
+                {{ .content.primary_action.text }}
+              </a>
+            {{ end }}
+          </div>
+        </section>
+      
+      {{ else if eq $block_type "about.biography" }}
+        <section class="py-16">
+          <div class="container mx-auto px-4">
+            {{ if .content.title }}
+              <h2 class="text-3xl font-bold mb-8 text-center">{{ .content.title }}</h2>
+            {{ end }}
+            <div class="max-w-4xl mx-auto">
+              {{ if .content.biography }}
+                <div class="prose prose-lg mx-auto">
+                  {{ .content.biography | markdownify }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      
+      {{ else if eq $block_type "skills" }}
+        <section class="py-16 bg-gray-50">
+          <div class="container mx-auto px-4">
+            {{ if .content.title }}
+              <h2 class="text-3xl font-bold mb-8 text-center">{{ .content.title }}</h2>
+            {{ end }}
+            {{ if .content.skills }}
+              <div class="max-w-4xl mx-auto">
+                {{ range .content.skills }}
+                  <div class="mb-6">
+                    <div class="flex justify-between mb-2">
+                      <span class="font-semibold">{{ .name }}</span>
+                      <span>{{ .percent }}%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                      <div class="bg-blue-600 h-2 rounded-full" style="width: {{ .percent }}%"></div>
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      
+      {{ else if eq $block_type "experience" }}
+        <section class="py-16">
+          <div class="container mx-auto px-4">
+            {{ if .content.title }}
+              <h2 class="text-3xl font-bold mb-8 text-center">{{ .content.title }}</h2>
+            {{ end }}
+            {{ if .content.experience }}
+              <div class="max-w-4xl mx-auto">
+                {{ range .content.experience }}
+                  <div class="mb-8 border-l-4 border-blue-600 pl-6">
+                    <h3 class="text-xl font-semibold">{{ .title }}</h3>
+                    {{ if .company }}
+                      <p class="text-blue-600 font-medium">{{ .company }}</p>
+                    {{ end }}
+                    {{ if .date_start }}
+                      <p class="text-gray-500 mb-2">{{ .date_start }}{{ if .date_end }} - {{ .date_end }}{{ else }} - Present{{ end }}</p>
+                    {{ end }}
+                    {{ if .description }}
+                      <p class="text-gray-700">{{ .description | markdownify }}</p>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      
+      {{ else if eq $block_type "collection" }}
+        <section class="py-16">
+          <div class="container mx-auto px-4">
+            {{ if .content.title }}
+              <h2 class="text-3xl font-bold mb-8 text-center">{{ .content.title }}</h2>
+            {{ end }}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {{ $content := .content }}
+              {{ if $content.filters.folders }}
+                {{ range $content.filters.folders }}
+                  {{ $folder := . }}
+                  {{ range where site.RegularPages "Section" $folder }}
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+                      <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">
+                          <a href="{{ .Permalink }}" class="text-blue-600 hover:text-blue-800">
+                            {{ .Title }}
+                          </a>
+                        </h3>
+                        {{ if .Params.summary }}
+                          <p class="text-gray-600 mb-3">{{ .Params.summary }}</p>
+                        {{ end }}
+                        {{ if .Date }}
+                          <div class="text-sm text-gray-500">
+                            {{ .Date.Format "January 2, 2006" }}
+                          </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      
+      {{ else if eq $block_type "contact" }}
+        <section class="py-16 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+          <div class="container mx-auto px-4 text-center">
+            {{ if .content.title }}
+              <h2 class="text-3xl font-bold mb-8">{{ .content.title }}</h2>
+            {{ end }}
+            {{ if .content.subtitle }}
+              <p class="text-xl mb-8">{{ .content.subtitle }}</p>
+            {{ end }}
+            <div class="max-w-2xl mx-auto">
+              {{ if .content.email }}
+                <p class="mb-4">
+                  <a href="mailto:{{ .content.email }}" class="text-white hover:underline">
+                    📧 {{ .content.email }}
+                  </a>
+                </p>
+              {{ end }}
+              {{ if .content.phone }}
+                <p class="mb-4">
+                  <a href="tel:{{ .content.phone }}" class="text-white hover:underline">
+                    📞 {{ .content.phone }}
+                  </a>
+                </p>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      
+      {{ else }}
+        <!-- Default section rendering -->
+        <section class="py-16">
+          <div class="container mx-auto px-4">
+            {{ if .content.title }}
+              <h2 class="text-3xl font-bold mb-8 text-center">{{ .content.title }}</h2>
+            {{ end }}
+            {{ if .content.subtitle }}
+              <p class="text-xl text-center text-gray-600 mb-8">{{ .content.subtitle }}</p>
+            {{ end }}
+            {{ if .content.text }}
+              <div class="prose prose-lg mx-auto">
+                {{ .content.text | markdownify }}
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    <!-- Fallback for pages without sections -->
+    <div class="container mx-auto px-4 py-8">
+      {{ if .Title }}
+        <h1 class="text-4xl font-bold mb-8">{{ .Title }}</h1>
+      {{ end }}
+      {{ if .Content }}
+        <div class="prose prose-lg mx-auto">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}

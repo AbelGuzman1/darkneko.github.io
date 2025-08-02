@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+  <article class="prose prose-lg mx-auto">
+    {{ if .Title }}
+      <h1 class="text-4xl font-bold mb-6">{{ .Title }}</h1>
+    {{ end }}
+    
+    {{ if .Params.summary }}
+      <div class="text-xl text-gray-600 mb-6">
+        {{ .Params.summary }}
+      </div>
+    {{ end }}
+    
+    {{ if .Date }}
+      <div class="text-sm text-gray-500 mb-6">
+        {{ .Date.Format "January 2, 2006" }}
+        {{ if .Params.lastmod }}
+          • Updated {{ .Params.lastmod.Format "January 2, 2006" }}
+        {{ end }}
+      </div>
+    {{ end }}
+    
+    {{ if .Params.tags }}
+      <div class="mb-6">
+        {{ range .Params.tags }}
+          <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mr-2 mb-2">
+            {{ . }}
+          </span>
+        {{ end }}
+      </div>
+    {{ end }}
+    
+    <div class="content">
+      {{ .Content }}
+    </div>
+    
+    {{ if .Params.authors }}
+      <div class="mt-8 pt-6 border-t">
+        <h3 class="text-lg font-semibold mb-2">Authors</h3>
+        {{ range .Params.authors }}
+          <span class="text-gray-700">{{ . }}</span>
+        {{ end }}
+      </div>
+    {{ end }}
+  </article>
+</div>
+{{ end }}
