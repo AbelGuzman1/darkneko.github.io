@@ -30,6 +30,8 @@ sections:
           size: cover
           position: center
           parallax: false
+      spacing:
+        padding: ['60px', '0', '60px', '0']
 
   - block: markdown
     content:
@@ -51,6 +53,8 @@ sections:
         ¡Colaboremos en proyectos innovadores! 
     design:
       columns: '1'
+      spacing:
+        padding: ['60px', '0', '60px', '0']
 
   - block: collection
     id: papers
@@ -63,6 +67,8 @@ sections:
     design:
       view: article-grid
       columns: 2
+      spacing:
+        padding: ['60px', '0', '60px', '0']
 
   - block: collection
     content:
@@ -74,6 +80,8 @@ sections:
         exclude_featured: false
     design:
       view: citation
+      spacing:
+        padding: ['60px', '0', '60px', '0']
 
   - block: collection
     id: talks
@@ -86,6 +94,8 @@ sections:
     design:
       view: article-grid
       columns: 1
+      spacing:
+        padding: ['60px', '0', '60px', '0']
 
   - block: collection
     id: news
@@ -115,7 +125,7 @@ sections:
       view: date-title-summary
       # Reduce spacing
       spacing:
-        padding: [0, 0, 0, 0]
+        padding: ['60px', '0', '60px', '0']
 
   - block: markdown
     id: contact
@@ -155,40 +165,26 @@ sections:
         
         <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-          e.preventDefault();
-          
           // Mostrar mensaje de envío
           const button = this.querySelector('button[type="submit"]');
           const originalText = button.innerHTML;
           button.innerHTML = '⏳ Enviando...';
           button.disabled = true;
           
-          // Enviar el formulario
-          fetch(this.action, {
-            method: 'POST',
-            body: new FormData(this),
-            headers: {
-              'Accept': 'application/json'
-            }
-          }).then(response => {
-            if (response.ok) {
-              // Limpiar formulario
-              this.reset();
-              button.innerHTML = '✅ ¡Enviado!';
-              setTimeout(() => {
-                button.innerHTML = originalText;
-                button.disabled = false;
-              }, 3000);
-            } else {
-              throw new Error('Error en el envío');
-            }
-          }).catch(error => {
-            button.innerHTML = '❌ Error';
+          // Permitir el envío nativo del formulario
+          setTimeout(() => {
+            // Limpiar formulario después del envío
+            document.getElementById('nombre').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('asunto').value = '';
+            document.getElementById('mensaje').value = '';
+            
+            button.innerHTML = '✅ ¡Enviado!';
             setTimeout(() => {
               button.innerHTML = originalText;
               button.disabled = false;
-            }, 3000);
-          });
+            }, 2000);
+          }, 1000);
         });
         </script>
         
@@ -224,4 +220,6 @@ sections:
         </div>
     design:
       columns: '1'
+      spacing:
+        padding: ['60px', '0', '60px', '0']
 ---
