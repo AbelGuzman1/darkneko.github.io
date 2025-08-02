@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode | default "en-us" }}" {{ if site.Params.text_direction }}dir="{{ site.Params.text_direction }}"{{ end }}>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ hugo.Generator }}
+
+  {{/* Title */}}
+  {{ if .IsHome }}
+    <title>{{ site.Title }}</title>
+  {{ else }}
+    <title>{{ .Title }} | {{ site.Title }}</title>
+  {{ end }}
+
+  {{/* Description */}}
+  {{ $desc := "" }}
+  {{ if .Params.summary }}
+    {{ $desc = .Params.summary }}
+  {{ else if .Params.abstract }}
+    {{ $desc = .Params.abstract }}
+  {{ else if .IsPage }}
+    {{ $desc = .Summary }}
+  {{ else if site.Params.marketing.description }}
+    {{ $desc = site.Params.marketing.description }}
+  {{ else }}
+    {{ $desc = site.Params.description }}
+  {{ end }}
+  <meta name="description" content="{{ $desc }}">
+
+  {{/* Canonical URL */}}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{/* Open Graph */}}
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ $desc }}">
+
+  {{/* Basic Tailwind CSS */}}
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  {{/* Custom head hooks */}}
+  {{ partial "hooks/head-end" . }}
+</head>
+
+<body class="bg-white text-black dark:bg-neutral-900 dark:text-white">
+
+  {{/* Main content */}}
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{/* Custom body end hooks */}}
+  {{ partial "hooks/body-end" . }}
+
+</body>
+</html>
