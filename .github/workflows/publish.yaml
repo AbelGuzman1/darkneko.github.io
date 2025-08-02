@@ -49,11 +49,12 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          TZ: America/New_York
         run: |
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://abelguzman1.github.io/darkneko.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

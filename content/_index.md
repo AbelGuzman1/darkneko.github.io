@@ -126,7 +126,7 @@ sections:
         🚀 ¿Tienes un proyecto interesante? 💡 ¿Quieres colaborar o simplemente charlar sobre tecnología? 
         ✨ No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
         
-        <form action="https://formspree.io/f/xpwljqqa" method="POST" style="max-width: 600px; margin: 2rem auto; background: rgba(26, 58, 46, 0.8); padding: 2rem; border-radius: 15px;">
+        <form id="contactForm" action="https://formspree.io/f/xpwljqqa" method="POST" style="max-width: 600px; margin: 2rem auto; background: rgba(26, 58, 46, 0.8); padding: 2rem; border-radius: 15px;">
           <div style="margin-bottom: 1.5rem;">
             <label for="nombre" style="display: block; margin-bottom: 0.5rem; color: white; font-weight: bold;">👤 Nombre completo</label>
             <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" style="width: 100%; padding: 1rem; border: none; border-radius: 8px; font-size: 1rem; background: rgba(255,255,255,0.95); color: #333; box-sizing: border-box;">
@@ -152,6 +152,45 @@ sections:
           
           <button type="submit" style="background: #198754; color: white; padding: 1rem 2rem; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; width: 100%; transition: all 0.3s ease;">🚀 Enviar Mensaje</button>
         </form>
+        
+        <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Mostrar mensaje de envío
+          const button = this.querySelector('button[type="submit"]');
+          const originalText = button.innerHTML;
+          button.innerHTML = '⏳ Enviando...';
+          button.disabled = true;
+          
+          // Enviar el formulario
+          fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this),
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              // Limpiar formulario
+              this.reset();
+              button.innerHTML = '✅ ¡Enviado!';
+              setTimeout(() => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+              }, 3000);
+            } else {
+              throw new Error('Error en el envío');
+            }
+          }).catch(error => {
+            button.innerHTML = '❌ Error';
+            setTimeout(() => {
+              button.innerHTML = originalText;
+              button.disabled = false;
+            }, 3000);
+          });
+        });
+        </script>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; max-width: 600px; margin: 4rem auto 0; padding: 0 1rem;">
           <a href="https://github.com/AbelGuzman1" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; background: rgba(255,255,255,0.15); border-radius: 12px; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease; min-height: 50px; font-size: 1rem;">
