@@ -198,28 +198,19 @@ awards:
 
 ##  Sobre Mí
 
-Soy un apasionado **Tecnólogo en Desarrollo de Software** estudiando en el prestigioso **Instituto Tecnológico de Las Américas (ITLA)**. Mi enfoque se centra en el desarrollo de soluciones tecnológicas innovadoras y eficientes.
+Soy **Abel Elías Guzmán Del Orbe**, estudiante de **Tecnólogo en Desarrollo de Software** en el **Instituto Tecnológico de Las Américas (ITLA)**. Mi pasión se centra en crear soluciones tecnológicas innovadoras que generen un impacto positivo.
 
-###  Experiencia Académica y Técnica
+###  Mi Enfoque Técnico
 
-Poseo sólidos conocimientos en **prácticas DevOps**, enfocándome en la automatización con **GitHub Actions (CI/CD)**, despliegue de contenedores con **Docker**, gestión de infraestructura mediante **Ansible**, y administración en entornos **Linux** y **Azure DevOps** para la gestión integral de proyectos.
+Especializado en desarrollo full-stack con sólidos conocimientos en **DevOps**, **automatización** con GitHub Actions, **contenedores Docker**, y gestión de infraestructura. Combino fundamentos en **Inteligencia Artificial** y **Análisis de Datos** para crear soluciones integrales.
 
-###  Áreas de Especialización
+###  Lo que me define
 
-Complemento mi formación con fundamentos en **Inteligencia Artificial** y **Análisis de Datos**, aplicados a procesos de **ETL** y migración de bases de datos en proyectos académicos y profesionales.
-
-###  Filosofía de Trabajo
-
-Creo firmemente en el poder de la **colaboración**, el **aprendizaje continuo**, y la **innovación tecnológica** para resolver desafíos complejos. Mi objetivo es contribuir al desarrollo de software que genere un impacto positivo en la sociedad.
-
-###  ¿Por qué trabajar conmigo?
-
--  **Pasión por la tecnología** y constante búsqueda de mejores soluciones
--  **Mentalidad colaborativa** y excelentes habilidades de comunicación  
 -  **Aprendizaje continuo** y adaptación a nuevas tecnologías
+-  **Colaboración efectiva** en equipos multidisciplinarios
 -  **Orientación a resultados** con enfoque en calidad y eficiencia
--  **Visión innovadora** para proyectos desafiantes
+-  **Mentalidad innovadora** para resolver desafíos complejos
 
 ---
 
-> *"El código es poesía en movimiento, y cada línea es una oportunidad para crear algo extraordinario."* 
+> *"El verdadero vencedor es aquel que se conquista a sí mismo."* 
