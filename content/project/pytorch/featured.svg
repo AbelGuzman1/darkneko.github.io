@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="pytorchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ee4c2c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#pytorchGrad)"/>
+  <g transform="translate(400,300)">
+    <text x="0" y="-50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Librería</text>
+    <text x="0" y="0" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="36">Online</text>
+    <text x="0" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24">Sistema de Gestión</text>
+    <circle cx="0" cy="120" r="40" fill="white" opacity="0.8"/>
+    <path d="M-20 105 L20 105 M-20 115 L20 115 M-20 125 L20 125 M-20 135 L20 135 M-15 100 L-15 140 M15 100 L15 140" stroke="#ee4c2c" stroke-width="3" fill="none"/>
+    <text x="0" y="130" text-anchor="middle" fill="#ee4c2c" font-family="Arial, sans-serif" font-size="20" font-weight="bold">📚</text>
+  </g>
+</svg>
