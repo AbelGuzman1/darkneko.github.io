@@ -1,31 +1,35 @@
 ---
-title: Sistema de Gestión de Inventario
-date: 2024-03-15
-external_link: https://github.com/AbelGuzman1/sistema-inventario
+title: Centro Médico CEDOMEDI
+date: 2025-07-30
+external_link: https://github.com/AbelGuzman1/Centro-Medico-CEDOMEDI
 tags:
-  - C#
-  - SQL Server
-  - .NET
-  - ITLA
+  - HTML5
+  - CSS3
+  - JavaScript
+  - Responsive Design
+  - SEO
+  - Diseño Web
 ---
 
-Sistema completo de gestión de inventario desarrollado en C# con SQL Server como parte de mi formación en ITLA. Incluye funcionalidades de CRUD, reportes y control de usuarios.
+Sitio web profesional para el Centro Médico CEDOMEDI desarrollado con tecnologías front-end modernas. Proyecto completo que incluye optimización SEO, formularios funcionales y diseño responsive.
 
 <!--more-->
 
-## Características del Sistema
+## Características del Proyecto
 
-- **Frontend**: Desarrollado en Windows Forms con C#
-- **Backend**: API REST con ASP.NET Core
-- **Base de Datos**: SQL Server con procedimientos almacenados
-- **Autenticación**: Sistema de roles y permisos
-- **Reportes**: Generación de reportes en PDF
+- **Frontend**: HTML5 semántico con CSS3 avanzado
+- **Interactividad**: JavaScript vanilla para navegación suave
+- **Responsive**: Diseño completamente adaptativo para todos los dispositivos
+- **SEO**: Meta tags optimizados y estructura semántica
+- **Formularios**: Integración con Formspree para contacto
+- **Integración**: WhatsApp, redes sociales y Google Maps
 
 ## Tecnologías Aplicadas
 
-Este proyecto me permitió aplicar conocimientos en:
-- Programación Orientada a Objetos
-- Patrones de Diseño (MVC, Repository)
-- Manejo de Bases de Datos Relacionales
-- Desarrollo de APIs RESTful
+Este proyecto me permitió dominar:
+- Desarrollo Front-end Profesional
+- Diseño Responsive y Mobile-First
+- Optimización SEO y Performance
+- JavaScript para UX/UI Avanzada
+- Integración de APIs y Servicios Externos
 - Metodologías Ágiles de Desarrollo

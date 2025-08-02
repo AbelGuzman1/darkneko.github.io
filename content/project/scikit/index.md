@@ -1,38 +1,51 @@
 ---
-title: Dashboard de Business Intelligence
-date: 2024-07-10
-external_link: https://github.com/AbelGuzman1/dashboard-bi
+title: Automatización con Ansible - DevOps
+date: 2025-07-17
+external_link: https://github.com/AbelGuzman1/ansible-practica8-itla
 tags:
-  - Python
-  - Machine Learning
-  - Power BI
-  - Data Science
-  - ITLA
+  - Ansible
+  - Docker
+  - DevOps
+  - Ubuntu
+  - Automatización
+  - Infrastructure as Code
 ---
 
-Dashboard interactivo de Business Intelligence desarrollado con Python y Power BI para análisis de datos empresariales, implementando algoritmos de machine learning para predicciones y insights.
+Proyecto de automatización avanzada utilizando Ansible y Docker para gestionar 5 servidores Ubuntu simultáneamente. Implementación completa de Infrastructure as Code (IaC) con playbooks automatizados.
 
 <!--more-->
 
 ## Tecnologías Utilizadas
 
-- **Python**: Para procesamiento y análisis de datos
-- **scikit-learn**: Implementación de modelos de machine learning
-- **pandas**: Manipulación y limpieza de datos
-- **Power BI**: Visualización interactiva de dashboards
-- **SQL Server**: Base de datos para almacenamiento de información
+- **Ansible**: Automatización de configuración y despliegue
+- **Docker & Docker Compose**: Contenedorización de infraestructura
+- **Ubuntu Server**: Sistemas operativos base en contenedores
+- **WSL (Windows Subsystem for Linux)**: Entorno de desarrollo nativo
+- **SSH & YAML**: Comunicación segura y configuración declarativa
 
-## Funcionalidades del Dashboard
+## Arquitectura del Proyecto
 
-- **Análisis Predictivo**: Predicción de ventas y tendencias de mercado
-- **KPIs Dinámicos**: Indicadores clave de rendimiento en tiempo real
-- **Segmentación de Clientes**: Clustering automático para targeting
-- **Alertas Inteligentes**: Notificaciones basadas en anomalías detectadas
-- **Reportes Automatizados**: Generación de reportes ejecutivos
+- **5 Servidores Ubuntu**: Desplegados como contenedores Docker
+- **Inventario Dinámico**: Configuración automática de hosts
+- **Playbooks YAML**: Automatización declarativa de tareas
+- **Acceso SSH**: Configuración segura sin verificación de claves
+- **Escalabilidad**: Infraestructura fácilmente replicable
 
-## Algoritmos Implementados
+## Tareas Automatizadas
 
-- Regresión Lineal para predicción de ventas
+- **Gestión de Paquetes**: Actualización e instalación automática (cowsay, htop)
+- **Gestión de Usuarios**: Creación automatizada del usuario 'itla'
+- **Sistema de Archivos**: Creación de directorios (/app) y archivos (hola.txt)
+- **Configuración de Sistema**: Aplicación masiva de configuraciones
+- **Validación**: Verificación automática del estado de infraestructura
+
+## Competencias DevOps Demostradas
+
+- Infrastructure as Code (IaC)
+- Automatización de Configuración
+- Contenedorización con Docker
+- Gestión de Inventarios Dinámicos
+- Orquestación de Servicios Distribuidos
 - K-Means para segmentación de clientes
 - Random Forest para clasificación de riesgo
 - Time Series Analysis para forecasting

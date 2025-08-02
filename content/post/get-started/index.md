@@ -1,25 +1,28 @@
 ---
-title: 🎉 Crea fácilmente tu propio blog simple pero altamente personalizable
-summary: ¡Toma el control total de tu marca personal y privacidad alejándote de las grandes plataformas tecnológicas!
-date: 2023-10-27
+title: 🚀 Mi Experiencia Desarrollando Proyectos Full-Stack en ITLA
+summary: Reflexiones sobre el aprendizaje de tecnologías modernas como PHP, Docker, Ansible y desarrollo web responsive en mi formación como Tecnólogo en Desarrollo de Software.
+date: 2025-08-02
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: 'Crédito de imagen: [**Unsplash**](https://unsplash.com)'
+  caption: 'Tecnólogo en Desarrollo de Software - ITLA'
 
 authors:
   - admin
 
 tags:
-  - Académico
-  - Hugo Blox
-  - Markdown
+  - ITLA
+  - Desarrollo Web
+  - PHP
+  - Docker
+  - DevOps
+  - Programación
 ---
 
-Welcome 👋
+¡Hola! 👋 Soy Abel Elías Guzmán 
 
-¡Bienvenido a mi portafolio digital! 👋
+Bienvenido a mi portafolio digital, donde comparto mi experiencia como estudiante de Tecnólogo en Desarrollo de Software en ITLA y los proyectos que he desarrollado durante mi formación.
 
 {{< toc mobile_only=true is_open=true >}}
 

@@ -1,5 +1,5 @@
 ---
-title: 'Desarrollo de Aplicaciones Web Responsivas con Metodologías Ágiles'
+title: 'Análisis Técnico Completo: Centro Médico CEDOMEDI - Implementación de SEO y UX Modernas'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -9,35 +9,35 @@ authors:
 
 # Author notes (optional)
 author_notes:
-  - 'Investigación académica ITLA'
+  - 'Análisis técnico y documentación de proyecto web profesional'
 
-date: '2024-06-15T00:00:00Z'
+date: '2025-07-30T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06-15T00:00:00Z'
+publishDate: '2025-07-30T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
-publication: En *Conferencia de Estudiantes de Tecnología ITLA*
-publication_short: En *CETITLA*
+publication: En *Documentación Técnica de Proyectos Web Profesionales*
+publication_short: En *DTPWP*
 
-abstract: Esta investigación académica presenta un enfoque innovador para el desarrollo de aplicaciones web responsivas utilizando metodologías ágiles, específicamente Scrum y Kanban. El estudio examina la implementación de tecnologías modernas como React.js, Node.js y MongoDB en proyectos de desarrollo de software, con especial énfasis en la automatización de procesos DevOps y la integración continua. Los resultados demuestran una mejora significativa en la productividad del equipo y la calidad del software entregado.
+abstract: Análisis técnico exhaustivo del sitio web del Centro Médico CEDOMEDI que identifica tanto fortalezas como oportunidades de mejora críticas. La investigación revela un proyecto con excelente base técnica (CSS estructurado, JavaScript optimizado, diseño responsive) pero con deficiencias SEO significativas que impactan su visibilidad online. Se documenta la paleta de colores profesional, arquitectura de archivos, funcionalidades implementadas y se propone un plan de optimización que podría incrementar el ranking de búsqueda en +300%. El análisis incluye evaluación de performance, accesibilidad, integración de servicios externos (Formspree, WhatsApp, Google Maps) y recomendaciones específicas para transformar el sitio en una referencia digital para servicios médicos en Santo Domingo Este.
 
 # Summary. An optional shortened abstract.
-summary: Investigación sobre desarrollo web moderno con metodologías ágiles, enfocada en tecnologías como React, Node.js y prácticas DevOps para estudiantes de ITLA.
+summary: Análisis técnico completo de sitio web médico profesional con identificación de optimizaciones SEO y recommendations para mejorar visibilidad digital y experiencia de usuario.
 
 tags:
-  - Desarrollo Web
-  - Metodologías Ágiles
-  - React.js
-  - Node.js
-  - DevOps
-  - ITLA
+  - Análisis Web
+  - SEO Técnico
+  - Desarrollo Frontend
+  - UX/UI Design
+  - Optimización Web
+  - Documentación Técnica
 
 # Display this page in the Featured widget?
 featured: true
@@ -48,12 +48,12 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: 'https://github.com/AbelGuzman1/web-responsiva-agiles'
+url_code: 'https://github.com/AbelGuzman1/Centro-Medico-CEDOMEDI'
 url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: 'https://github.com/AbelGuzman1/web-responsiva-agiles'
+url_source: 'https://github.com/AbelGuzman1/Centro-Medico-CEDOMEDI'
 url_video: ''
 
 # Featured image

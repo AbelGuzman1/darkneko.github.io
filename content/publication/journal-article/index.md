@@ -1,14 +1,14 @@
 ---
-title: "Implementación de Microservicios con .NET Core y Docker"
+title: "Automatización de Infraestructura con Ansible y Docker: Estudio de Caso con 5 Servidores Ubuntu"
 authors:
 - admin
 author_notes:
-- "Proyecto académico ITLA"
-date: "2024-04-15T00:00:00Z"
+- "Práctica 8 - Electiva II Automatización de Infraestructura (ITLA)"
+date: "2025-07-17T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-04-15T00:00:00Z"
+publishDate: "2025-07-17T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -16,16 +16,21 @@ publishDate: "2024-04-15T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Revista de Tecnología ITLA, 2*(1)"
+publication: "*Documentación de Prácticas DevOps ITLA, 2025*(1)"
 publication_short: ""
 
-abstract: Este artículo presenta un análisis de la implementación de arquitecturas de microservicios utilizando .NET Core y contenedores Docker. El estudio examina las mejores prácticas para el desarrollo, despliegue y orquestación de microservicios en entornos de producción, con un enfoque particular en la escalabilidad y mantenibilidad del sistema.
+abstract: Este documento presenta la implementación exitosa de un entorno de automatización completo utilizando Ansible y Docker para gestionar 5 servidores Ubuntu simultáneamente. El proyecto demuestra la aplicación práctica de Infrastructure as Code (IaC) mediante playbooks YAML, inventarios dinámicos y contenedorización con Docker Compose. Se documentan todas las fases del proyecto desde la construcción de imágenes Docker hasta la ejecución de tareas automatizadas que incluyen gestión de paquetes (cowsay, htop), creación de usuarios (itla), manejo de sistema de archivos (/app/hola.txt), y configuración masiva de servidores. El entorno se ejecuta 100% desde Ubuntu WSL, proporcionando una experiencia de desarrollo nativa y escalable que simula infraestructura real aplicando las mejores prácticas DevOps.
 
 # Summary. An optional shortened abstract.
-summary: Análisis de implementación de microservicios con .NET Core y Docker, explorando mejores prácticas para desarrollo y despliegue escalable.
+summary: Implementación práctica de automatización DevOps con Ansible y Docker para gestión de múltiples servidores Ubuntu, demonstrando Infrastructure as Code y mejores prácticas de automatización.
 
 tags:
-- Source Themes
+- Ansible
+- Docker
+- DevOps
+- Infrastructure as Code
+- Ubuntu
+- Automatización
 featured: false
 
 # links:
