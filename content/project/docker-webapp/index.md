@@ -1,7 +1,16 @@
 ---
 title: Web App Containerizada con Docker
+summary: Aplicación web con arquitectura de microservicios usando Docker y Docker Compose
 date: 2025-07-20
+lastmod: 2025-07-20
+draft: false
+featured: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
 external_link: https://github.com/AbelGuzman1/Practica-Web-App-con-Dockerfile-y-Docker-Compose
+url_code: https://github.com/AbelGuzman1/Practica-Web-App-con-Dockerfile-y-Docker-Compose
 tags:
   - Docker
   - Python Flask
@@ -9,6 +18,8 @@ tags:
   - Docker Compose
   - Microservicios
   - Contenedorización
+categories:
+  - DevOps
 ---
 
 Aplicación web completa desarrollada con arquitectura de microservicios utilizando Docker y Docker Compose. Implementación de Flask conectado a base de datos MySQL en contenedores separados.

@@ -1,13 +1,24 @@
 ---
 title: Sistema de Comentarios Interactivo
+summary: Sistema web interactivo para gestión de comentarios con interfaz moderna y responsive
 date: 2025-07-25
+lastmod: 2025-07-25
+draft: false
+featured: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
 external_link: https://github.com/AbelGuzman1/proyecto-grupal-deja-tu-comentario
+url_code: https://github.com/AbelGuzman1/proyecto-grupal-deja-tu-comentario
 tags:
   - PHP
   - JavaScript
   - Bootstrap 5
   - HTML5
   - CSS3
+  - Web Development
+categories:
   - Web Development
 ---
 

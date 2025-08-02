@@ -1,7 +1,16 @@
 ---
 title: Automatización con Ansible - DevOps
+summary: Proyecto de automatización con Ansible y Docker para gestión de 5 servidores Ubuntu
 date: 2025-07-17
+lastmod: 2025-07-17
+draft: false
+featured: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
 external_link: https://github.com/AbelGuzman1/ansible-practica8-itla
+url_code: https://github.com/AbelGuzman1/ansible-practica8-itla
 tags:
   - Ansible
   - Docker
@@ -9,6 +18,8 @@ tags:
   - Ubuntu
   - Automatización
   - Infrastructure as Code
+categories:
+  - DevOps
 ---
 
 Proyecto de automatización avanzada utilizando Ansible y Docker para gestionar 5 servidores Ubuntu simultáneamente. Implementación completa de Infrastructure as Code (IaC) con playbooks automatizados.

@@ -1,7 +1,16 @@
 ---
 title: Centro Médico CEDOMEDI
+summary: Sitio web profesional para centro médico con tecnologías front-end modernas
 date: 2025-07-30
+lastmod: 2025-07-30
+draft: false
+featured: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
 external_link: https://github.com/AbelGuzman1/Centro-Medico-CEDOMEDI
+url_code: https://github.com/AbelGuzman1/Centro-Medico-CEDOMEDI
 tags:
   - HTML5
   - CSS3
@@ -9,6 +18,8 @@ tags:
   - Responsive Design
   - SEO
   - Diseño Web
+categories:
+  - Web Development
 ---
 
 Sitio web profesional para el Centro Médico CEDOMEDI desarrollado con tecnologías front-end modernas. Proyecto completo que incluye optimización SEO, formularios funcionales y diseño responsive.

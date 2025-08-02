@@ -1,7 +1,16 @@
 ---
 title: Librería Online - Sistema de Gestión
+summary: Sistema completo de gestión de librería desarrollado con PHP y SQLite
 date: 2025-07-25
+lastmod: 2025-07-25
+draft: false
+featured: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
 external_link: https://github.com/AbelGuzman1/Practica_Final_Programacion_Web
+url_code: https://github.com/AbelGuzman1/Practica_Final_Programacion_Web
 tags:
   - PHP
   - SQLite
@@ -9,6 +18,8 @@ tags:
   - JavaScript
   - SQL
   - CRUD
+categories:
+  - Web Development
 ---
 
 Sistema completo de gestión de librería desarrollado con PHP y SQLite. Aplicación web integral con funcionalidades avanzadas de búsqueda, filtrado y gestión de datos.
