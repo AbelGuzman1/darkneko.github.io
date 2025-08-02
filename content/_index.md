@@ -120,45 +120,27 @@ sections:
   - block: markdown
     id: contact
     content:
-      title: 📧 Contacto
-      subtitle: 🤝 ¡Conectemos y colaboremos!
+      title: ""
+      subtitle: ""
       text: |-
         <style>
-        .green-contact-section {
+        .contact-section {
           background: linear-gradient(135deg, #1e3a2e 0%, #2d5a3d 30%, #198754 70%, #20c997 100%);
-          padding: 4rem 2rem;
+          padding: 3rem 2rem;
           margin: 0 -2rem;
           border-radius: 0;
           color: white;
         }
-        [data-theme="dark"] .green-contact-section {
+        [data-theme="dark"] .contact-section {
           background: linear-gradient(135deg, #0f2419 0%, #1a3326 30%, #145a3c 70%, #1aa179 100%);
         }
-        .green-contact-section h2, .green-contact-section h3 {
+        .contact-section h2, .contact-section h3 {
           color: white !important;
           text-align: center;
         }
-        .social-icons {
-          text-align: center;
-          margin: 2rem 0;
-        }
-        .social-icons a {
-          display: inline-block;
-          margin: 0 1rem;
-          padding: 1rem;
-          background: rgba(255,255,255,0.2);
-          border-radius: 10px;
-          color: white;
-          text-decoration: none;
-          transition: all 0.3s ease;
-        }
-        .social-icons a:hover {
-          background: rgba(255,255,255,0.3);
-          transform: translateY(-5px);
-        }
-        .contact-form-container {
+        .contact-form {
           max-width: 600px;
-          margin: 2rem auto;
+          margin: 0 auto 3rem auto;
           background: rgba(255,255,255,0.1);
           padding: 2rem;
           border-radius: 15px;
@@ -179,11 +161,11 @@ sections:
           border: none;
           border-radius: 8px;
           font-size: 1rem;
-          background: rgba(255,255,255,0.9);
+          background: rgba(255,255,255,0.95);
           color: #333;
           box-sizing: border-box;
         }
-        .submit-button {
+        .submit-btn {
           background: #198754;
           color: white;
           padding: 1rem 2rem;
@@ -195,13 +177,65 @@ sections:
           width: 100%;
           transition: all 0.3s ease;
         }
-        .submit-button:hover {
+        .submit-btn:hover {
           background: #157347;
           transform: translateY(-2px);
         }
+        .social-links {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+          gap: 1rem;
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+        .social-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          background: rgba(255,255,255,0.15);
+          border-radius: 12px;
+          color: white;
+          text-decoration: none;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          min-height: 50px;
+          font-size: 1rem;
+        }
+        .social-link:hover {
+          background: rgba(255,255,255,0.25);
+          transform: translateY(-3px);
+          color: white;
+        }
+        @media (max-width: 768px) {
+          .contact-section {
+            padding: 2rem 1rem;
+            margin: 0 -1rem;
+          }
+          .contact-form {
+            padding: 1.5rem;
+          }
+          .social-links {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            padding: 0 0.5rem;
+          }
+          .social-link {
+            padding: 0.75rem;
+            font-size: 0.9rem;
+            min-height: 45px;
+          }
+        }
+        @media (max-width: 480px) {
+          .social-links {
+            grid-template-columns: 1fr;
+            max-width: 300px;
+          }
+        }
         </style>
         
-        <div class="green-contact-section">
+        <div class="contact-section">
           <h2>📧 Contacto</h2>
           <h3>🤝 ¡Conectemos y colaboremos!</h3>
           <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
@@ -209,45 +243,40 @@ sections:
             ✨ No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
           </p>
           
-          <div class="social-icons">
-            <a href="https://github.com/abelguzman1" target="_blank">💻 GitHub</a>
-            <a href="https://linkedin.com/in/abeleliasguzman" target="_blank">🤝 LinkedIn</a>
-            <a href="mailto:abelg4446@gmail.com" target="_blank">📧 Email</a>
-            <a href="https://wa.me/18091234567" target="_blank">📱 WhatsApp</a>
-          </div>
-          
-          <div class="contact-form-container">
-            <form action="https://formspree.io/f/xpwljqqa" method="POST">
-              <div class="form-group">
-                <label for="nombre">👤 Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
-              </div>
-              
-              <div class="form-group">
-                <label for="email">📧 Correo electrónico</label>
-                <input type="email" id="email" name="_replyto" required placeholder="tu@email.com">
-              </div>
-              
-              <div class="form-group">
-                <label for="asunto">📋 Asunto</label>
-                <input type="text" id="asunto" name="_subject" required placeholder="¿De qué quieres hablar?">
-              </div>
-              
-              <div class="form-group">
-                <label for="mensaje">💬 Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame sobre tu proyecto o idea..."></textarea>
-              </div>
-              
-              <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact">
-              <input type="hidden" name="_language" value="es">
-              
-              <button type="submit" class="submit-button">🚀 Enviar Mensaje</button>
-            </form>
+          <form class="contact-form" action="https://formspree.io/f/xpwljqqa" method="POST">
+            <div class="form-group">
+              <label for="nombre">👤 Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+            </div>
             
-            <p style="text-align: center; margin-top: 1rem; color: rgba(255,255,255,0.8);">
-              ✨ Formulario configurado y listo para recibir mensajes
-            </p>
+            <div class="form-group">
+              <label for="email">📧 Correo electrónico</label>
+              <input type="email" id="email" name="_replyto" required placeholder="tu@email.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="asunto">📋 Asunto</label>
+              <input type="text" id="asunto" name="_subject" required placeholder="¿De qué quieres hablar?">
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje">💬 Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame sobre tu proyecto o idea..."></textarea>
+            </div>
+            
+            <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact">
+            <input type="hidden" name="_language" value="es">
+            
+            <button type="submit" class="submit-btn">🚀 Enviar Mensaje</button>
+          </form>
+          
+          <div class="social-links">
+            <a href="https://github.com/abelguzman1" target="_blank" class="social-link">GitHub</a>
+            <a href="https://linkedin.com/in/abeleliasguzman" target="_blank" class="social-link">LinkedIn</a>
+            <a href="mailto:abelg4446@gmail.com" class="social-link">Correo</a>
+            <a href="https://wa.me/18091234567" target="_blank" class="social-link">WhatsApp</a>
           </div>
+        </div>
         </div>
     design:
       columns: '1'
