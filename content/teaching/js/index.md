@@ -2,14 +2,22 @@
 title: Aprende JavaScript
 summary: ¡Domina JavaScript fácilmente con enfoque en desarrollo web moderno!
 date: 2023-10-24
+lastmod: 2023-10-24
 type: docs
+draft: false
+featured: false
 math: false
 tags:
   - JavaScript
   - Desarrollo Web
   - ITLA
+categories:
+  - Teaching
+  - Web Development
 image:
   caption: 'Incorpora contenido multimedia enriquecido como videos y matemáticas LaTeX'
+  focal_point: ''
+  preview_only: false
 ---
 
 Como estudiante de **Desarrollo de Software en ITLA**, JavaScript es fundamental para el desarrollo web tanto en frontend como en backend. [Hugo Blox Builder](https://hugoblox.com) está diseñado para brindar a los creadores de contenido técnico una experiencia perfecta.

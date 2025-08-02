@@ -2,6 +2,9 @@
 title: ✅ Gestión de Proyectos de Software
 summary: Aprende metodologías ágiles, herramientas de planificación y técnicas de gestión de proyectos de desarrollo aplicadas en ITLA.
 date: 2023-10-23
+lastmod: 2023-10-23
+draft: false
+featured: false
 authors:
   - admin
 tags:
@@ -9,8 +12,13 @@ tags:
   - Metodologías Ágiles
   - ITLA
   - Desarrollo de Software
+categories:
+  - Project Management
+  - Blog
 image:
   caption: 'Crédito de imagen: [**Unsplash**](https://unsplash.com)'
+  focal_point: ''
+  preview_only: false
 ---
 
 Como estudiante de **Desarrollo de Software en ITLA**, he aprendido que la gestión efectiva de proyectos es crucial para el éxito en el desarrollo de software. Aquí exploro metodologías ágiles, herramientas de planificación y técnicas de organización que aplico en mis proyectos académicos y personales.

@@ -1,7 +1,10 @@
 ---
-title: 👩‍� Enseñanza y Tutorías Técnicas
+title: 👩‍🏫 Enseñanza y Tutorías Técnicas
 summary: ¡Incorpora videos, podcasts, código, matemáticas LaTeX e incluso evalúa estudiantes!
 date: 2023-10-24
+lastmod: 2023-10-24
+draft: false
+featured: false
 math: true
 authors:
   - admin
@@ -10,21 +13,13 @@ tags:
   - Programación
   - ITLA
   - Tutorías
+categories:
+  - Education
+  - Blog
 image:
   caption: 'Incorpora contenido multimedia enriquecido como videos y matemáticas LaTeX'
----🏫 Enseñanza y Tutorías Técnicas
-summary: ¡Incorpora videos, podcasts, código, matemáticas LaTeX e incluso evalúa estudiantes!
-date: 2023-10-24
-math: true
-authors:
-  - admin
-tags:
-  - Educación
-  - Programación
-  - ITLA
-  - Tutorías
-image:
-  caption: 'Incorpora contenido multimedia enriquecido como videos y matemáticas LaTeX'
+  focal_point: ''
+  preview_only: false
 ---
 
 Como estudiante de **Desarrollo de Software en ITLA**, he descubierto la importancia de compartir conocimiento con mis compañeros. [Hugo Blox Builder](https://hugoblox.com) está diseñado para brindar a los creadores de contenido técnico una experiencia perfecta.
@@ -49,88 +44,59 @@ Enseño conceptos de programación compartiendo videos con mis compañeros estud
 
 {{< bilibili BV1WV4y1r7DF >}}
 
-**Archivo de Video**
+**Video Local**:
 
-Los videos pueden agregarse a una página colocándolos en tu biblioteca de medios `assets/media/` o en [la carpeta de tu página](https://gohugo.io/content-management/page-bundles/), y luego insertándolos con el shortcode _video_:
+Videos pueden ser subidos directamente a la carpeta `assets/media/` y embebidos con:
 
     {{</* video src="my_video.mp4" controls="yes" */>}}
 
-## Podcast
+{{< video src="ambient-piano.mp3" controls="yes" >}}
 
-Puedes agregar un podcast o música a una página colocando el archivo MP3 en la carpeta de la página o en la carpeta de la biblioteca de medios y luego insertando el audio en tu página con el shortcode _audio_:
+## Podcasts
+
+Los podcasts se embeben de manera similar a los videos.
+
+A veces me gusta compartir audios de conceptos técnicos con mis compañeros:
 
     {{</* audio src="ambient-piano.mp3" */>}}
 
-Pruébalo:
-
 {{< audio src="ambient-piano.mp3" >}}
 
-## Evalúa Estudiantes
+Prueba utilizando el botón de play para reproducir el audio.
 
-Proporciona una autoevaluación simple pero divertida revelando las soluciones a los desafíos con el shortcode `spoiler`:
+## Evaluaciones Interactivas
 
-```markdown
-{{</* spoiler text="👉 Haz clic para ver la solución" */>}}
-¡Me encontraste!
-{{</* /spoiler */>}}
-```
+Con Hugo Blox, es fácil crear evaluaciones para evaluar a los estudiantes. Un ejemplo de evaluación de verdadero/falso:
 
-se renderiza como
+{{< spoiler text="🤔 ¿Es JavaScript un lenguaje de programación interpretado?" >}}
+**¡Verdadero!** JavaScript es un lenguaje interpretado que se ejecuta directamente en el navegador web.
+{{< /spoiler >}}
 
-{{< spoiler text="👉 Haz clic para ver la solución" >}} ¡Me encontraste! 🎉 {{< /spoiler >}}
+{{< spoiler text="¿Python requiere compilación antes de ejecutarse?" >}}
+**¡Falso!** Python es un lenguaje interpretado. Aunque puede generar bytecode, no requiere compilación explícita del usuario.
+{{< /spoiler >}}
 
-## Matemáticas
+{{< spoiler text="¿HTML es un lenguaje de programación?" >}}
+**¡Falso!** HTML es un lenguaje de marcado, no de programación. Se usa para estructurar contenido web.
+{{< /spoiler >}}
 
-Hugo Blox Builder admite una extensión de Markdown para matemáticas $\LaTeX$. Habilita las matemáticas configurando la opción `math: true` en el front matter de tu página, o habilita las matemáticas para todo tu sitio activando math en tu archivo `config/_default/params.yaml`:
+## Fórmulas matemáticas
 
-```yaml
-features:
-  math:
-    enable: true
-```
+Las fórmulas matemáticas pueden ser habilitadas globalmente para un sitio configurando `math: true` en `config/_default/params.yaml`, o puede ser habilitada por página configurando `math: true` en el front matter de la página.
 
-Para renderizar matemáticas _en línea_ o _en bloque_, envuelve tu matemática LaTeX con `$...$` o `$$...$$`, respectivamente.
+Para renderizar fórmulas en línea, envuelve la fórmula con `$`...$`.
 
-Example **math block**:
+Para mostrar ecuaciones matemáticas, envuelve la fórmula con `$$`...`$$`.
 
-```latex
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-```
+Por ejemplo, aquí está una integral usada comúnmente en algoritmos de aprendizaje automático:
 
-renders as
+$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf x_{n}) - \nabla F(\mathbf x_{n-1}) \right \|^2}$$
 
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+## Resaltado de Código
 
-Example **inline math** `$\nabla F(\mathbf{x}_{n})$` renders as $\nabla F(\mathbf{x}_{n})$.
+Aplico un resaltado de sintaxis usando la biblioteca Chroma de Hugo. Los [códigos cortos](https://hugoblox.com/docs/content/writing-markdown-latex/#highlight) de Hugo help con la numeración de líneas, resaltado de líneas, y codificación.
 
-Example **multi-line math** using the math linebreak (`\\`):
-
-```latex
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-```
-
-renders as
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
-
-## Code
-
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
+Por ejemplo, puedo resaltar Python:
 
 ```python
 import pandas as pd
@@ -138,14 +104,15 @@ data = pd.read_csv("data.csv")
 data.head()
 ```
 
-## Inline Images
+O resaltar JavaScript:
 
-```go
-{{</* icon name="python" */>}} Python
+```javascript
+const nombre = "ITLA";
+console.log(`Hola desde ${nombre}!`);
 ```
 
-renders as
+## ¿Algo más?
 
-{{< icon name="python" >}} Python
+¿Tienes alguna sugerencia de funcionalidad que debería agregar? [Hágamelo saber!](https://github.com/AbelGuzman1)
 
-## Did you find this page helpful? Consider sharing it 🙌
+También puedes probar HugoBlox con diferentes diseños de página con el [**constructor de páginas en línea**](https://hugoblox.com/hugo-themes/).

@@ -2,11 +2,16 @@
 title: 🚀 Mi Experiencia Desarrollando Proyectos Web Integrales en ITLA
 summary: Reflexiones sobre el aprendizaje de tecnologías modernas como PHP, Docker, Ansible y desarrollo web responsive en mi formación como Tecnólogo en Desarrollo de Software.
 date: 2025-08-02
+lastmod: 2025-08-02
+draft: false
+featured: false
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
   caption: 'Tecnólogo en Desarrollo de Software - ITLA'
+  focal_point: ''
+  preview_only: false
 
 authors:
   - admin
@@ -18,6 +23,9 @@ tags:
   - Docker
   - DevOps
   - Programación
+categories:
+  - Blog
+  - Tecnología
 ---
 
 ¡Hola! 👋 Soy Abel Elías Guzmán 

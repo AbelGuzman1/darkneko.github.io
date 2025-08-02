@@ -5,6 +5,9 @@ authors:
 author_notes:
 - "Práctica 8 - Electiva II Automatización de Infraestructura (ITLA)"
 date: "2025-07-17T00:00:00Z"
+lastmod: "2025-07-17T00:00:00Z"
+draft: false
+featured: false
 doi: ""
 
 # Schedule page publish date (NOT publication's date).

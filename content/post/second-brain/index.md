@@ -2,6 +2,9 @@
 title: 🧠 Construye tu Segundo Cerebro Digital
 summary: Crea una base de conocimiento personal y comparte tu aprendizaje como estudiante de desarrollo de software en ITLA.
 date: 2023-10-26
+lastmod: 2023-10-26
+draft: false
+featured: false
 authors:
   - admin
 tags:
@@ -9,8 +12,13 @@ tags:
   - Aprendizaje Continuo
   - ITLA
   - Desarrollo Personal
+categories:
+  - Knowledge Management
+  - Blog
 image:
   caption: 'Crédito de imagen: [**Unsplash**](https://unsplash.com)'
+  focal_point: ''
+  preview_only: false
 ---
 
 Como estudiante de **Desarrollo de Software en ITLA**, crear una base de conocimiento personal se ha vuelto esencial para mi crecimiento académico y profesional. Este "segundo cerebro" me ayuda a organizar, conectar y compartir todo lo que aprendo en mi formación tecnológica.

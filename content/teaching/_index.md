@@ -1,7 +1,10 @@
 ---
 title: Enseñanza
 summary: Recursos educativos y tutoriales
+date: 2023-10-24
+lastmod: 2023-10-24
 type: landing
+draft: false
 cascade:
   - _target:
       kind: page

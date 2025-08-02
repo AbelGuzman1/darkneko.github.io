@@ -3,6 +3,9 @@ title: "Análisis de Algoritmos de Machine Learning para Predicción de Datos"
 authors:
 - admin
 date: "2024-07-20T00:00:00Z"
+lastmod: "2024-07-20T00:00:00Z"
+draft: false
+featured: false
 doi: ""
 
 # Schedule page publish date (NOT publication's date).

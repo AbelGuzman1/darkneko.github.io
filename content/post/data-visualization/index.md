@@ -2,6 +2,9 @@
 title: 📈 Visualización de Datos Efectiva para Desarrolladores
 summary: Aprende a comunicar resultados de manera efectiva usando herramientas modernas como Plotly, Mermaid y frameworks de datos.
 date: 2023-10-25
+lastmod: 2023-10-25
+draft: false
+featured: false
 authors:
   - admin
 tags:
@@ -9,8 +12,13 @@ tags:
   - Visualización
   - Business Intelligence
   - ITLA
+categories:
+  - Data Science
+  - Blog
 image:
   caption: 'Crédito de imagen: [**Unsplash**](https://unsplash.com)'
+  focal_point: ''
+  preview_only: false
 ---
 
 Como estudiante de **Desarrollo de Software en ITLA**, considero que la visualización de datos es una competencia esencial en el mundo tecnológico actual. Hugo Blox me permite integrar perfectamente contenido técnico avanzado, enfocándome en el análisis mientras la plataforma maneja la presentación.

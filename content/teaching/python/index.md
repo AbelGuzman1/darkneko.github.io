@@ -2,14 +2,22 @@
 title: Aprende Python
 summary: ¡Domina Python fácilmente con conceptos fundamentales para desarrollo de software!
 date: 2023-10-24
+lastmod: 2023-10-24
 type: docs
+draft: false
+featured: false
 math: false
 tags:
   - Python
   - Programación
   - ITLA
+categories:
+  - Teaching
+  - Programming
 image:
   caption: 'Incorpora contenido multimedia enriquecido como videos y matemáticas LaTeX'
+  focal_point: ''
+  preview_only: false
 ---
 
 Como estudiante de **Desarrollo de Software en ITLA**, Python se ha convertido en una de mis herramientas favoritas para scripting, automatización y análisis de datos. [Hugo Blox Builder](https://hugoblox.com) está diseñado para brindar a los creadores de contenido técnico una experiencia perfecta.

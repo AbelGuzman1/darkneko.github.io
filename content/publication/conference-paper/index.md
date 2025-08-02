@@ -1,5 +1,6 @@
 ---
 title: 'Análisis Técnico Completo: Centro Médico CEDOMEDI - Implementación de SEO y UX Modernas'
+summary: Análisis técnico y documentación de proyecto web profesional
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -12,6 +13,9 @@ author_notes:
   - 'Análisis técnico y documentación de proyecto web profesional'
 
 date: '2025-07-30T00:00:00Z'
+lastmod: '2025-07-30T00:00:00Z'
+draft: false
+featured: false
 doi: ''
 
 # Schedule page publish date (NOT publication's date).

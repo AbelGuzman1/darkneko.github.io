@@ -1,5 +1,8 @@
 ---
 title: Charlas y Presentaciones
+date: 2023-10-24
+lastmod: 2023-10-24
+draft: false
 cms_exclude: true
 #url: talk
 

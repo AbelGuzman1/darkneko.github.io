@@ -1,5 +1,7 @@
 ---
 title: Example Talk
+draft: false
+featured: false
 
 event: Hugo Blox Builder Conference
 event_url: https://example.org
@@ -18,6 +20,7 @@ abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: '2030-06-01T13:00:00Z'
+lastmod: '2030-06-01T13:00:00Z'
 date_end: '2030-06-01T15:00:00Z'
 all_day: false
 
