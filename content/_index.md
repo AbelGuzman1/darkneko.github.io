@@ -120,29 +120,26 @@ sections:
   - block: markdown
     id: contact
     content:
-      title: Contacto
-      subtitle: ¡Conectemos y colaboremos!
       text: |-
-        ¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? 
-        No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
-        
         <style>
-        /* Contenedor principal con gradiente verde similar al "Sobre Mí" */
-        .contact-container {
+        /* Contenedor principal con gradiente verde */
+        .contact-section {
           background: linear-gradient(135deg, #1e3a2e 0%, #2d5a3d 30%, #198754 70%, #20c997 100%);
           padding: 4rem 2rem;
-          margin: 2rem -2rem;
+          margin: 0;
           position: relative;
           overflow: hidden;
+          width: 100vw;
+          margin-left: calc(-50vw + 50%);
         }
         
         /* Adaptación para tema oscuro */
-        [data-theme="dark"] .contact-container {
+        [data-theme="dark"] .contact-section {
           background: linear-gradient(135deg, #0f2419 0%, #1a3326 30%, #145a3c 70%, #1aa179 100%);
         }
         
-        /* Patrón de fondo similar al de "Sobre Mí" */
-        .contact-container::before {
+        /* Patrón de fondo decorativo */
+        .contact-section::before {
           content: '';
           position: absolute;
           top: 0;
@@ -151,6 +148,36 @@ sections:
           bottom: 0;
           background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
           opacity: 0.3;
+        }
+        
+        /* Títulos en la sección verde */
+        .contact-header {
+          text-align: center;
+          margin-bottom: 3rem;
+          position: relative;
+          z-index: 2;
+        }
+        
+        .contact-header h2 {
+          color: white;
+          margin: 0 0 1rem 0;
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        
+        .contact-header .subtitle {
+          color: rgba(255, 255, 255, 0.9);
+          margin: 0 0 1rem 0;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+        
+        .contact-header .description {
+          color: rgba(255, 255, 255, 0.8);
+          margin: 0;
+          font-size: 1rem;
+          max-width: 600px;
+          margin: 0 auto;
         }
         
         /* Formulario neutro y limpio */
@@ -246,48 +273,29 @@ sections:
         [data-theme="dark"] .form-success {
           color: #20c997;
         }
-        
-        /* Título en la sección verde */
-        .contact-title {
-          color: white;
-          text-align: center;
-          margin-bottom: 3rem;
-          position: relative;
-          z-index: 2;
-        }
-        
-        .contact-subtitle {
-          color: rgba(255, 255, 255, 0.9);
-          text-align: center;
-          margin-bottom: 2rem;
-          position: relative;
-          z-index: 2;
-        }
         </style>
         
-        <div class="contact-container">
-          <div class="contact-title">
-            <h2 style="color: white; margin: 0; font-size: 2.5rem; font-weight: 700;">Contacto</h2>
-          </div>
-          <div class="contact-subtitle">
-            <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 1.1rem;">¡Conectemos y colaboremos!</p>
-            <p style="color: rgba(255, 255, 255, 0.8); margin-top: 0.5rem; font-size: 1rem;">¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología?</p>
+        <div class="contact-section">
+          <div class="contact-header">
+            <h2>Contacto</h2>
+            <div class="subtitle">¡Conectemos y colaboremos!</div>
+            <div class="description">¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.</div>
           </div>
           
           <form action="https://formspree.io/f/mwpqnpzo" method="POST" class="contact-form">
             <div class="form-group">
               <label for="nombre" class="form-label">Nombre completo</label>
-              <input type="text" id="nombre" name="nombre" required class="form-input" />
+              <input type="text" id="nombre" name="nombre" required class="form-input">
             </div>
             
             <div class="form-group">
               <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" id="email" name="_replyto" required class="form-input" />
+              <input type="email" id="email" name="_replyto" required class="form-input">
             </div>
             
             <div class="form-group">
               <label for="asunto" class="form-label">Asunto</label>
-              <input type="text" id="asunto" name="_subject" required class="form-input" />
+              <input type="text" id="asunto" name="_subject" required class="form-input">
             </div>
             
             <div class="form-group">
@@ -295,8 +303,8 @@ sections:
               <textarea id="mensaje" name="mensaje" rows="5" required class="form-textarea"></textarea>
             </div>
             
-            <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact" />
-            <input type="hidden" name="_language" value="es" />
+            <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact">
+            <input type="hidden" name="_language" value="es">
             
             <button type="submit" class="submit-btn">Enviar Mensaje</button>
             
