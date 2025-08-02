@@ -1,4 +1,4 @@
-﻿---
+---
 # Leave the homepage title empty to use the site title
 title: ""
 date: 2022-10-24
@@ -15,14 +15,14 @@ sections:
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
-        text:  Descargar CV
+        text: Descargar CV
         url: uploads/CV_Abel_Guzman_Software_ITLA.pdf
     design:
       css_class: dark
       background:
         color: black
         image:
-          # Add your image background to ssets/media/.
+          # Add your image background to assets/media/.
           filename: stacked-peaks.svg
           filters:
             brightness: 1.0
@@ -32,7 +32,7 @@ sections:
 
   - block: markdown
     content:
-      title: ' Mi Enfoque Técnico'
+      title: 'Mi Enfoque Técnico'
       subtitle: 'Tecnólogo en Desarrollo de Software - ITLA'
       text: |-
         Especializado en desarrollo de software con enfoque en tecnologías modernas y metodologías ágiles.
@@ -41,11 +41,11 @@ sections:
         hasta la implementación de soluciones de infraestructura y análisis de datos.
         
         **Áreas de Expertise:**
-        -  Desarrollo Full-Stack (Frontend & Backend)
-        -  DevOps y Contenedores (Docker, Kubernetes)
-        -  Servicios en la Nube (Azure, AWS)
-        -  Análisis de Datos y Business Intelligence
-        -  Automatización de Procesos
+        - Desarrollo Full-Stack (Frontend & Backend)
+        - DevOps y Contenedores (Docker, Kubernetes)
+        - Servicios en la Nube (Azure, AWS)
+        - Análisis de Datos y Business Intelligence
+        - Automatización de Procesos
         
         ¡Colaboremos en proyectos innovadores! 
     design:
@@ -54,7 +54,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title:  Publicaciones Destacadas
+      title: Publicaciones Destacadas
       filters:
         folders:
           - publication
@@ -65,7 +65,7 @@ sections:
 
   - block: collection
     content:
-      title:  Publicaciones Recientes
+      title: Publicaciones Recientes
       text: "Explora mis últimas contribuciones académicas y técnicas"
       filters:
         folders:
@@ -77,7 +77,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title:  Charlas y Presentaciones
+      title: Charlas y Presentaciones
       subtitle: "Conferencias, workshops y presentaciones técnicas"
       filters:
         folders:
@@ -89,7 +89,7 @@ sections:
   - block: collection
     id: news
     content:
-      title:  Noticias y Actualizaciones
+      title: Noticias y Actualizaciones
       subtitle: 'Mantente al día con mis últimas actividades'
       text: ''
       # Page type to display. E.g. post, talk, publication...
