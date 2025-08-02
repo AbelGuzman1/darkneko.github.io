@@ -117,7 +117,7 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
 
-  - block: markdown
+  - block: html
     id: contact
     content:
       text: |-
