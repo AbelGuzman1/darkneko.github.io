@@ -129,11 +129,16 @@ sections:
         <style>
         /* Contenedor principal con gradiente verde similar al "Sobre Mí" */
         .contact-container {
-          background: linear-gradient(135deg, #0d6efd 0%, #198754 50%, #20c997 100%);
+          background: linear-gradient(135deg, #1e3a2e 0%, #2d5a3d 30%, #198754 70%, #20c997 100%);
           padding: 4rem 2rem;
           margin: 2rem -2rem;
           position: relative;
           overflow: hidden;
+        }
+        
+        /* Adaptación para tema oscuro */
+        [data-theme="dark"] .contact-container {
+          background: linear-gradient(135deg, #0f2419 0%, #1a3326 30%, #145a3c 70%, #1aa179 100%);
         }
         
         /* Patrón de fondo similar al de "Sobre Mí" */
