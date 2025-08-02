@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="dockerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2496ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0db7ed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#dockerGrad)"/>
+  <g transform="translate(400,300)">
+    <text x="0" y="-50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Docker</text>
+    <text x="0" y="0" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="36">Web App</text>
+    <text x="0" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24">Containerizada</text>
+    <circle cx="0" cy="100" r="30" fill="white" opacity="0.8"/>
+    <path d="M-15 85 L15 85 L15 115 L-15 115 Z M-10 90 L10 90 M-10 95 L10 95 M-10 100 L10 100 M-10 105 L10 105 M-10 110 L10 110" stroke="#2496ed" stroke-width="2" fill="none"/>
+  </g>
+</svg>

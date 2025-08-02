@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="phpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#777bb4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f5b93;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#phpGrad)"/>
+  <g transform="translate(400,300)">
+    <text x="0" y="-50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">PHP</text>
+    <text x="0" y="0" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="36">Sistema de</text>
+    <text x="0" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="36">Comentarios</text>
+    <circle cx="0" cy="120" r="40" fill="white" opacity="0.8"/>
+    <path d="M-20 105 Q-20 95 -10 95 L10 95 Q20 95 20 105 L20 125 Q20 135 10 135 L-10 135 Q-20 135 -20 125 Z" fill="#777bb4"/>
+    <text x="0" y="125" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">💬</text>
+  </g>
+</svg>
