@@ -20,7 +20,7 @@ En esta página, encontrarás algunos ejemplos de los tipos de contenido técnic
 
 ## Videos Educativos
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+Enseña tu curso compartiendo videos con tus estudiantes. Elige uno de los siguientes enfoques:
 
 {{< youtube D2vj0WcvH5c >}}
 
@@ -32,47 +32,47 @@ Teach your course by sharing videos with your students. Choose from one of the f
 
     {{</* bilibili id="BV1WV4y1r7DF" */>}}
 
-**Video file**
+**Archivo de Video**
 
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
+Los videos pueden agregarse a una página colocándolos en tu biblioteca de medios `assets/media/` o en [la carpeta de tu página](https://gohugo.io/content-management/page-bundles/), y luego insertándolos con el shortcode _video_:
 
     {{</* video src="my_video.mp4" controls="yes" */>}}
 
 ## Podcast
 
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
+Puedes agregar un podcast o música a una página colocando el archivo MP3 en la carpeta de la página o en la carpeta de la biblioteca de medios y luego insertando el audio en tu página con el shortcode _audio_:
 
     {{</* audio src="ambient-piano.mp3" */>}}
 
-Try it out:
+Pruébalo:
 
 {{< audio src="ambient-piano.mp3" >}}
 
-## Test students
+## Evalúa Estudiantes
 
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
+Proporciona una autoevaluación simple pero divertida revelando las soluciones a los desafíos con el shortcode `spoiler`:
 
 ```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
+{{</* spoiler text="👉 Haz clic para ver la solución" */>}}
+¡Me encontraste!
 {{</* /spoiler */>}}
 ```
 
-renders as
+se renderiza como
 
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
+{{< spoiler text="👉 Haz clic para ver la solución" >}} ¡Me encontraste! 🎉 {{< /spoiler >}}
 
-## Math
+## Matemáticas
 
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
+Hugo Blox Builder admite una extensión de Markdown para matemáticas $\LaTeX$. Puedes habilitar esta función activando la opción `math` en tu archivo `config/_default/params.yaml`.
 
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
+Para renderizar matemáticas _en línea_ o _en bloque_, envuelve tu matemática LaTeX con `{{</* math */>}}$...${{</* /math */>}}` o `{{</* math */>}}$$...$${{</* /math */>}}`, respectivamente.
 
 {{% callout note %}}
-We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
+Envolvemos las matemáticas LaTeX en el shortcode _math_ de Hugo Blox para evitar que Hugo renderice nuestras matemáticas como Markdown.
 {{% /callout %}}
 
-Example **math block**:
+Ejemplo de **bloque matemático**:
 
 ```latex
 {{</* math */>}}
@@ -82,37 +82,37 @@ $$
 {{</* /math */>}}
 ```
 
-renders as
+se renderiza como
 
 {{< math >}}
 $$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
 {{< /math >}}
 
-Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
+Ejemplo de **matemática en línea** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` se renderiza como {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
 
-Example **multi-line math** using the math linebreak (`\\`):
+Ejemplo de **matemática multilínea** usando el salto de línea matemático (`\\`):
 
 ```latex
 {{</* math */>}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
+$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{si }k=1, \\
+1-p_{0}^{*} & \text{si }k=0.\end{cases}$$
 {{</* /math */>}}
 ```
 
-renders as
+se renderiza como
 
 {{< math >}}
 
 $$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
+f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{si }k=1, \\
+1-p_{0}^{*} & \text{si }k=0.\end{cases}
 $$
 
 {{< /math >}}
 
-## Code
+## Código
 
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
+Hugo Blox Builder utiliza la extensión Markdown de Hugo para resaltar la sintaxis del código. El tema del código puede seleccionarse en el archivo `config/_default/params.yaml`.
 
 
     ```python
@@ -121,7 +121,7 @@ Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code synta
     data.head()
     ```
 
-renders as
+se renderiza como
 
 ```python
 import pandas as pd
@@ -129,14 +129,14 @@ data = pd.read_csv("data.csv")
 data.head()
 ```
 
-## Inline Images
+## Imágenes en Línea
 
 ```go
 {{</* icon name="python" */>}} Python
 ```
 
-renders as
+se renderiza como
 
 {{< icon name="python" >}} Python
 
-## Did you find this page helpful? Consider sharing it 🙌
+## ¿Te resultó útil esta página? ¡Considera compartirla! 🙌

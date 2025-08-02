@@ -1,5 +1,18 @@
 ---
-title: �‍🏫 Enseñanza y Tutorías Técnicas
+title: 👩‍� Enseñanza y Tutorías Técnicas
+summary: ¡Incorpora videos, podcasts, código, matemáticas LaTeX e incluso evalúa estudiantes!
+date: 2023-10-24
+math: true
+authors:
+  - admin
+tags:
+  - Educación
+  - Programación
+  - ITLA
+  - Tutorías
+image:
+  caption: 'Incorpora contenido multimedia enriquecido como videos y matemáticas LaTeX'
+---🏫 Enseñanza y Tutorías Técnicas
 summary: ¡Incorpora videos, podcasts, código, matemáticas LaTeX e incluso evalúa estudiantes!
 date: 2023-10-24
 math: true
@@ -36,39 +49,39 @@ Enseño conceptos de programación compartiendo videos con mis compañeros estud
 
 {{< bilibili BV1WV4y1r7DF >}}
 
-**Video file**
+**Archivo de Video**
 
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
+Los videos pueden agregarse a una página colocándolos en tu biblioteca de medios `assets/media/` o en [la carpeta de tu página](https://gohugo.io/content-management/page-bundles/), y luego insertándolos con el shortcode _video_:
 
     {{</* video src="my_video.mp4" controls="yes" */>}}
 
 ## Podcast
 
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
+Puedes agregar un podcast o música a una página colocando el archivo MP3 en la carpeta de la página o en la carpeta de la biblioteca de medios y luego insertando el audio en tu página con el shortcode _audio_:
 
     {{</* audio src="ambient-piano.mp3" */>}}
 
-Try it out:
+Pruébalo:
 
 {{< audio src="ambient-piano.mp3" >}}
 
-## Test students
+## Evalúa Estudiantes
 
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
+Proporciona una autoevaluación simple pero divertida revelando las soluciones a los desafíos con el shortcode `spoiler`:
 
 ```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
+{{</* spoiler text="👉 Haz clic para ver la solución" */>}}
+¡Me encontraste!
 {{</* /spoiler */>}}
 ```
 
-renders as
+se renderiza como
 
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
+{{< spoiler text="👉 Haz clic para ver la solución" >}} ¡Me encontraste! 🎉 {{< /spoiler >}}
 
-## Math
+## Matemáticas
 
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. Enable math by setting the `math: true` option in your page's front matter, or enable math for your entire site by toggling math in your `config/_default/params.yaml` file:
+Hugo Blox Builder admite una extensión de Markdown para matemáticas $\LaTeX$. Habilita las matemáticas configurando la opción `math: true` en el front matter de tu página, o habilita las matemáticas para todo tu sitio activando math en tu archivo `config/_default/params.yaml`:
 
 ```yaml
 features:
@@ -76,7 +89,7 @@ features:
     enable: true
 ```
 
-To render _inline_ or _block_ math, wrap your LaTeX math with `$...$` or `$$...$$`, respectively.
+Para renderizar matemáticas _en línea_ o _en bloque_, envuelve tu matemática LaTeX con `$...$` o `$$...$$`, respectivamente.
 
 Example **math block**:
 
