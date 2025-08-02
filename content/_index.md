@@ -117,7 +117,7 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
 
-  - block: contact
+  - block: markdown
     id: contact
     content:
       title: Contacto
@@ -125,26 +125,17 @@ sections:
       text: |-
         ¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? 
         No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
-      
-      # Contact details - edit or remove options as needed
-      email: abelg4446@gmail.com
-      phone: +1 809 351 8297
-      address:
-        street: República Dominicana
-        city: Santo Domingo
-        region: Distrito Nacional
-        postcode: ''
-        country: República Dominicana
-        country_code: DO
-      
-      # Contact form
-      form:
-        provider: netlify
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: true
+        
+        **📧 Email:** [abelg4446@gmail.com](mailto:abelg4446@gmail.com)  
+        **📱 Teléfono:** +1 809 351 8297  
+        **📍 Ubicación:** Santo Domingo, República Dominicana
     design:
       columns: '1'
+      background:
+        color: 'rgb(248, 249, 250)'
+        text_color_light: false
+      spacing:
+        padding: ['2rem', '1rem', '1rem', '1rem']
 
   - block: markdown
     content:
