@@ -35,22 +35,24 @@ sections:
 
   - block: markdown
     content:
-      title: 'Mi Enfoque Técnico'
-      subtitle: 'Tecnólogo en Desarrollo de Software - ITLA'
+      title: '📝 Propósito del Blog'
+      subtitle: 'Compartiendo Conocimiento y Experiencias'
       text: |-
-        Especializado en desarrollo de software con enfoque en tecnologías modernas y metodologías ágiles.
-        Como estudiante del ITLA, aplico conocimientos en DevOps, automatización, contenedores Docker,
-        y desarrollo de aplicaciones web. Mi experiencia abarca desde programación en múltiples lenguajes
-        hasta la implementación de soluciones de infraestructura y análisis de datos.
+        Este espacio digital es mi ventana para compartir experiencias, aprendizajes y descubrimientos 
+        en el fascinante mundo de la tecnología. Como estudiante del ITLA, creo firmemente en el 
+        poder del conocimiento compartido y la colaboración.
         
-        **Áreas de Expertise:**
-        - Desarrollo Full-Stack (Frontend & Backend)
-        - DevOps y Contenedores (Docker, Kubernetes)
-        - Servicios en la Nube (Azure, AWS)
-        - Análisis de Datos y Business Intelligence
-        - Automatización de Procesos
+        **¿Qué encontrarás aquí?**
+        - 💡 Tutoriales y guías técnicas prácticas
+        - 🔧 Soluciones a problemas reales de desarrollo
+        - 📊 Análisis de proyectos y casos de estudio
+        - 🚀 Experiencias con nuevas tecnologías y herramientas
+        - 🎯 Reflexiones sobre metodologías y mejores prácticas
         
-        ¡Colaboremos en proyectos innovadores! 
+        Mi objetivo es crear una comunidad donde podamos aprender juntos, compartir desafíos
+        y celebrar los logros en nuestro camino hacia la excelencia técnica.
+        
+        ¡Espero que este contenido te sea útil y te inspire a seguir creciendo! 
     design:
       columns: '1'
       spacing:

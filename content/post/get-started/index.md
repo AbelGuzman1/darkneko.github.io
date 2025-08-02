@@ -1,5 +1,5 @@
 ---
-title: 🚀 Mi Experiencia Desarrollando Proyectos Full-Stack en ITLA
+title: 🚀 Mi Experiencia Desarrollando Proyectos Web Integrales en ITLA
 summary: Reflexiones sobre el aprendizaje de tecnologías modernas como PHP, Docker, Ansible y desarrollo web responsive en mi formación como Tecnólogo en Desarrollo de Software.
 date: 2025-08-02
 
@@ -63,7 +63,7 @@ Como futuro **Tecnólogo en Desarrollo de Software**, utilizo este sitio para:
 
 - **Documentar mi aprendizaje** en tecnologías modernas
 - **Compartir proyectos** desarrollados durante mis estudios en ITLA
-- **Demostrar competencias** en desarrollo full-stack y DevOps
+- **Demostrar competencias** en desarrollo web integral y DevOps
 - **Crear una marca personal** profesional en el sector tecnológico
 
 ## Tecnologías Utilizadas

@@ -11,7 +11,7 @@ tags:
   - CRUD
 ---
 
-Sistema completo de gestión de librería desarrollado con PHP y SQLite. Aplicación web full-stack con funcionalidades avanzadas de búsqueda, filtrado y gestión de datos.
+Sistema completo de gestión de librería desarrollado con PHP y SQLite. Aplicación web integral con funcionalidades avanzadas de búsqueda, filtrado y gestión de datos.
 
 <!--more-->
 
@@ -35,7 +35,7 @@ Sistema completo de gestión de librería desarrollado con PHP y SQLite. Aplicac
 ## Características Técnicas
 
 Este proyecto demuestra dominio en:
-- Desarrollo Full-Stack con PHP
+- Desarrollo Web Integral con PHP
 - Diseño de Bases de Datos Relacionales
 - Programación Orientada a Objetos
 - Seguridad Web y Validación de Datos
@@ -45,7 +45,7 @@ Este proyecto demuestra dominio en:
 ## Aprendizajes Clave
 
 Este proyecto me permitió dominar:
-- Desarrollo Full-Stack con JavaScript
+- Desarrollo Web Integral con JavaScript
 - Manejo de estado en aplicaciones React
 - Diseño e implementación de APIs RESTful
 - Trabajo con bases de datos NoSQL

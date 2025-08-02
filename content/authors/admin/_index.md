@@ -48,7 +48,7 @@ profiles:
 # Interests
 interests:
   - Desarrollo de Software
-  - Programación Web Full-Stack
+  - Programación Web Integral
   - Desarrollo Frontend (React, Vue.js)
   - Desarrollo Backend (Node.js, .NET)
   - Bases de Datos (SQL Server, MySQL)
@@ -192,7 +192,7 @@ awards:
       **Logros Destacados:**
       - Participación en proyectos colaborativos multidisciplinarios
       - Implementación de soluciones DevOps para automatización
-      - Desarrollo de aplicaciones full-stack funcionales
+      - Desarrollo de aplicaciones web integrales funcionales
       - Aplicación de principios SOLID y patrones de diseño
 ---
 
@@ -202,7 +202,7 @@ Soy **Abel Elías Guzmán Del Orbe**, estudiante de **Tecnólogo en Desarrollo d
 
 ###  Mi Enfoque Técnico
 
-Especializado en desarrollo full-stack con sólidos conocimientos en **DevOps**, **automatización** con GitHub Actions, **contenedores Docker**, y gestión de infraestructura. Combino fundamentos en **Inteligencia Artificial** y **Análisis de Datos** para crear soluciones integrales.
+Especializado en desarrollo web integral con sólidos conocimientos en **DevOps**, **automatización** con GitHub Actions, **contenedores Docker**, y gestión de infraestructura. Combino fundamentos en **Inteligencia Artificial** y **Análisis de Datos** para crear soluciones integrales.
 
 ###  Lo que me define
 
