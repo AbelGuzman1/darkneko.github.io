@@ -117,13 +117,70 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
 
-  - block: html
+  - block: contact
     id: contact
     content:
-      text: |-
-        <style>
-        /* Contenedor principal con gradiente verde */
-        .contact-section {
+      title: 📧 Contacto
+      subtitle: 🤝 ¡Conectemos y colaboremos!
+      text: |
+        🚀 ¿Tienes un proyecto interesante? 💡 ¿Quieres colaborar o simplemente charlar sobre tecnología? 
+        ✨ No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
+      
+      # Formulario de contacto
+      form:
+        provider: formspree
+        formspree:
+          id: mwpqnpzo
+        fields:
+          - name: nombre
+            label: 👤 Nombre completo
+            type: text
+            required: true
+          - name: email
+            label: 📧 Correo electrónico  
+            type: email
+            required: true
+          - name: asunto
+            label: 📋 Asunto
+            type: text
+            required: true
+          - name: mensaje
+            label: 💬 Mensaje
+            type: textarea
+            required: true
+            placeholder: Cuéntame sobre tu proyecto o idea...
+      
+      # Enlaces de redes sociales
+      social:
+        - icon: fab fa-github
+          name: GitHub
+          url: 'https://github.com/abelguzman1'
+          description: 💻 Mis proyectos y código
+        - icon: fab fa-linkedin
+          name: LinkedIn
+          url: 'https://linkedin.com/in/abelguzman'
+          description: 🤝 Red profesional
+        - icon: fab fa-twitter
+          name: Twitter
+          url: 'https://twitter.com/abeldev'
+          description: 🐦 Pensamientos y actualizaciones
+        - icon: fas fa-envelope
+          name: Email
+          url: 'mailto:abel.guzman@email.com'
+          description: 📧 Contacto directo
+        - icon: fab fa-whatsapp
+          name: WhatsApp
+          url: 'https://wa.me/18091234567'
+          description: 📱 Chat rápido
+    design:
+      columns: '1'
+      background:
+        gradient_start: '#1e3a2e'
+        gradient_end: '#20c997'
+        text_color_light: true
+      css_class: 'contact-section-dynamic'
+      css_style: |
+        .contact-section-dynamic {
           background: linear-gradient(135deg, #1e3a2e 0%, #2d5a3d 30%, #198754 70%, #20c997 100%);
           padding: 4rem 2rem;
           margin: 0;
@@ -131,186 +188,107 @@ sections:
           overflow: hidden;
           width: 100vw;
           margin-left: calc(-50vw + 50%);
+          animation: gradientShift 8s ease-in-out infinite;
         }
         
-        /* Adaptación para tema oscuro */
-        [data-theme="dark"] .contact-section {
+        @keyframes gradientShift {
+          0%, 100% { background: linear-gradient(135deg, #1e3a2e 0%, #2d5a3d 30%, #198754 70%, #20c997 100%); }
+          50% { background: linear-gradient(135deg, #2d5a3d 0%, #198754 20%, #20c997 60%, #1e3a2e 100%); }
+        }
+        
+        [data-theme="dark"] .contact-section-dynamic {
           background: linear-gradient(135deg, #0f2419 0%, #1a3326 30%, #145a3c 70%, #1aa179 100%);
         }
         
-        /* Patrón de fondo decorativo */
-        .contact-section::before {
+        [data-theme="dark"] .contact-section-dynamic {
+          animation: gradientShiftDark 8s ease-in-out infinite;
+        }
+        
+        @keyframes gradientShiftDark {
+          0%, 100% { background: linear-gradient(135deg, #0f2419 0%, #1a3326 30%, #145a3c 70%, #1aa179 100%); }
+          50% { background: linear-gradient(135deg, #1a3326 0%, #145a3c 20%, #1aa179 60%, #0f2419 100%); }
+        }
+        
+        .contact-section-dynamic::before {
           content: '';
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
-          opacity: 0.3;
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dynamicPattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1.5" fill="rgba(255,255,255,0.15)"><animate attributeName="r" values="1;2;1" dur="3s" repeatCount="indefinite"/></circle><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"><animate attributeName="r" values="0.5;1.5;0.5" dur="4s" repeatCount="indefinite"/></circle><circle cx="40" cy="80" r="1.2" fill="rgba(255,255,255,0.12)"><animate attributeName="r" values="1;1.8;1" dur="5s" repeatCount="indefinite"/></circle></pattern></defs><rect width="100%" height="100%" fill="url(%23dynamicPattern)"/></svg>');
+          opacity: 0.4;
         }
         
-        /* Títulos en la sección verde */
-        .contact-header {
-          text-align: center;
-          margin-bottom: 3rem;
-          position: relative;
-          z-index: 2;
-        }
-        
-        .contact-header h2 {
+        .contact-section-dynamic h2 {
           color: white;
-          margin: 0 0 1rem 0;
-          font-size: 2.5rem;
-          font-weight: 700;
+          text-align: center;
+          font-size: 2.8rem;
+          margin-bottom: 1rem;
+          text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+          animation: titleGlow 3s ease-in-out infinite alternate;
         }
         
-        .contact-header .subtitle {
-          color: rgba(255, 255, 255, 0.9);
-          margin: 0 0 1rem 0;
-          font-size: 1.2rem;
+        @keyframes titleGlow {
+          from { text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+          to { text-shadow: 0 2px 20px rgba(255,255,255,0.3), 0 0 30px rgba(32,201,151,0.5); }
+        }
+        
+        .contact-section-dynamic .subtitle {
+          color: rgba(255, 255, 255, 0.95);
+          text-align: center;
+          font-size: 1.4rem;
+          margin-bottom: 2rem;
           font-weight: 600;
         }
         
-        .contact-header .description {
-          color: rgba(255, 255, 255, 0.8);
-          margin: 0;
-          font-size: 1rem;
-          max-width: 600px;
-          margin: 0 auto;
+        .contact-section-dynamic .social-links {
+          display: flex;
+          justify-content: center;
+          gap: 1.5rem;
+          margin: 2rem 0;
+          flex-wrap: wrap;
         }
         
-        /* Formulario neutro y limpio */
-        .contact-form {
-          max-width: 600px;
-          margin: 0 auto;
-          padding: 2.5rem;
-          background: rgba(255, 255, 255, 0.95);
-          border-radius: 16px;
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        .contact-section-dynamic .social-link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 15px;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          color: white;
           backdrop-filter: blur(10px);
-          position: relative;
-          z-index: 2;
+          min-width: 120px;
         }
         
-        [data-theme="dark"] .contact-form {
-          background: rgba(40, 44, 52, 0.95);
-          color: #f8f9fa;
+        .contact-section-dynamic .social-link:hover {
+          background: rgba(255, 255, 255, 0.2);
+          transform: translateY(-5px) scale(1.05);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
         
-        .form-group {
-          margin-bottom: 1.5rem;
-        }
-        
-        .form-label {
-          display: block;
+        .contact-section-dynamic .social-link i {
+          font-size: 2rem;
           margin-bottom: 0.5rem;
-          font-weight: 600;
-          color: #333;
-          font-size: 0.95rem;
-        }
-        
-        [data-theme="dark"] .form-label {
-          color: #f8f9fa;
-        }
-        
-        .form-input, .form-textarea {
-          width: 100%;
-          padding: 0.875rem 1rem;
-          border: 2px solid #e9ecef;
-          border-radius: 8px;
-          font-size: 1rem;
           transition: all 0.3s ease;
-          background: #fff;
-          color: #333;
-          box-sizing: border-box;
         }
         
-        .form-input:focus, .form-textarea:focus {
-          outline: none;
-          border-color: #198754;
-          box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.1);
+        .contact-section-dynamic .social-link:hover i {
+          transform: scale(1.2) rotate(5deg);
         }
         
-        [data-theme="dark"] .form-input, [data-theme="dark"] .form-textarea {
-          background: #495057;
-          color: #f8f9fa;
-          border-color: #6c757d;
-        }
-        
-        [data-theme="dark"] .form-input:focus, [data-theme="dark"] .form-textarea:focus {
-          border-color: #20c997;
-          box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.1);
-        }
-        
-        .submit-btn {
-          background: #198754;
-          color: white;
-          padding: 0.875rem 2rem;
-          border: none;
-          border-radius: 8px;
-          font-size: 1rem;
+        .contact-section-dynamic .social-link .social-name {
           font-weight: 600;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          width: 100%;
+          font-size: 0.9rem;
         }
         
-        .submit-btn:hover {
-          background: #157347;
-          transform: translateY(-2px);
-          box-shadow: 0 8px 25px rgba(25, 135, 84, 0.3);
-        }
-        
-        .form-success {
-          margin-top: 1rem;
-          font-size: 0.875rem;
-          color: #198754;
+        .contact-section-dynamic .social-link .social-desc {
+          font-size: 0.8rem;
+          opacity: 0.9;
           text-align: center;
-          font-weight: 500;
+          margin-top: 0.3rem;
         }
-        
-        [data-theme="dark"] .form-success {
-          color: #20c997;
-        }
-        </style>
-        
-        <div class="contact-section">
-          <div class="contact-header">
-            <h2>Contacto</h2>
-            <div class="subtitle">¡Conectemos y colaboremos!</div>
-            <div class="description">¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.</div>
-          </div>
-          
-          <form action="https://formspree.io/f/mwpqnpzo" method="POST" class="contact-form">
-            <div class="form-group">
-              <label for="nombre" class="form-label">Nombre completo</label>
-              <input type="text" id="nombre" name="nombre" required class="form-input">
-            </div>
-            
-            <div class="form-group">
-              <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" id="email" name="_replyto" required class="form-input">
-            </div>
-            
-            <div class="form-group">
-              <label for="asunto" class="form-label">Asunto</label>
-              <input type="text" id="asunto" name="_subject" required class="form-input">
-            </div>
-            
-            <div class="form-group">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" rows="5" required class="form-textarea"></textarea>
-            </div>
-            
-            <input type="hidden" name="_next" value="https://abelguzman1.github.io/darkneko.github.io/#contact">
-            <input type="hidden" name="_language" value="es">
-            
-            <button type="submit" class="submit-btn">Enviar Mensaje</button>
-            
-            <p class="form-success">Formulario configurado y listo para recibir mensajes</p>
-          </form>
-        </div>
-    design:
-      columns: '1'
 ---
