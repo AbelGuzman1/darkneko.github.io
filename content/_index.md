@@ -217,7 +217,6 @@ sections:
             WhatsApp
           </a>
         </div>
-        </div>
     design:
       columns: '1'
       spacing:
