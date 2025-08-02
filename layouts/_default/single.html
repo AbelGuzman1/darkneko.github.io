@@ -11,10 +11,10 @@
       </div>
     {{ end }}
     
-    {{ if .Date }}
+    {{ if and .Date (not .Date.IsZero) }}
       <div class="text-sm text-gray-500 mb-6">
         {{ .Date.Format "January 2, 2006" }}
-        {{ if .Params.lastmod }}
+        {{ if and .Params.lastmod (not .Params.lastmod.IsZero) }}
           • Updated {{ .Params.lastmod.Format "January 2, 2006" }}
         {{ end }}
       </div>
@@ -31,8 +31,10 @@
     {{ end }}
     
     <div class="content">
-      {{/* Fixed: Ensure .Content is spelled correctly */}}
-      {{ .Content }}
+      {{/* Fixed: Ensure .Content is spelled correctly and available */}}
+      {{ if .Content }}
+        {{ .Content }}
+      {{ end }}
     </div>
     
     {{ if .Params.authors }}
