@@ -30,11 +30,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.136.5
     steps:
       - name: Install Hugo CLI
         run: |
-          wget -O ${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.tar.gz
+          wget -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.tar.gz https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.tar.gz
           tar -xzf hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.tar.gz
           sudo install hugo /usr/local/bin/
 
