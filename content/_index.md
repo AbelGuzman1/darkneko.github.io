@@ -9,6 +9,7 @@ design:
 
 sections:
   - block: resume-biography-3
+    id: about
     content:
       # Choose a user profile to display (a folder name within content/authors/)
       username: admin
@@ -115,4 +116,74 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
+
+  - block: contact
+    id: contact
+    content:
+      title: Contacto
+      subtitle: ¡Conectemos y colaboremos!
+      text: |-
+        ¿Tienes un proyecto interesante? ¿Quieres colaborar o simplemente charlar sobre tecnología? 
+        No dudes en contactarme. Estoy siempre abierto a nuevas oportunidades y conexiones profesionales.
+      
+      # Contact details - edit or remove options as needed
+      email: abelg4446@gmail.com
+      phone: +1 809 351 8297
+      address:
+        street: República Dominicana
+        city: Santo Domingo
+        region: Distrito Nacional
+        postcode: ''
+        country: República Dominicana
+        country_code: DO
+      
+      # Contact form
+      form:
+        provider: netlify
+        netlify:
+          # Enable CAPTCHA challenge to reduce spam?
+          captcha: true
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
+      title: ""
+      text: |-
+        <div style="text-align: center; margin-top: 2rem;">
+          <h3>También puedes encontrarme en:</h3>
+          <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            <a href="mailto:abelg4446@gmail.com" style="text-decoration: none; color: inherit;">
+              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
+                <i class="fas fa-envelope" style="font-size: 2.5rem; color: #dc3545; margin-bottom: 0.5rem;"></i>
+                <span style="font-weight: 500;">Email</span>
+              </div>
+            </a>
+            <a href="https://github.com/AbelGuzman1" target="_blank" style="text-decoration: none; color: inherit;">
+              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
+                <i class="fab fa-github" style="font-size: 2.5rem; color: #333; margin-bottom: 0.5rem;"></i>
+                <span style="font-weight: 500;">GitHub</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/abeleliasguzman/" target="_blank" style="text-decoration: none; color: inherit;">
+              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
+                <i class="fab fa-linkedin" style="font-size: 2.5rem; color: #0077b5; margin-bottom: 0.5rem;"></i>
+                <span style="font-weight: 500;">LinkedIn</span>
+              </div>
+            </a>
+            <a href="https://wa.me/8093518297" target="_blank" style="text-decoration: none; color: inherit;">
+              <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem;">
+                <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: #25d366; margin-bottom: 0.5rem;"></i>
+                <span style="font-weight: 500;">WhatsApp</span>
+              </div>
+            </a>
+          </div>
+        </div>
+    design:
+      columns: '1'
+      background:
+        color: 'rgb(247, 247, 247)'
+        text_color_light: false
+      spacing:
+        padding: ['2rem', '1rem', '2rem', '1rem']
 ---
